@@ -304,8 +304,6 @@ class Interpreter():
             self.big_data["Bronkhorst Pressure"]["Data"]["Measurement (mbar a)"] = fmeasure
             self.big_data["Bronkhorst Pressure"]["Data"]["Temperature (C)"] = temp
 
-            print(self.big_data["Bronkhorst Pressure"]["Data"]["Temperature"])
-
         except Exception as e:
             logger.warning(f"Encountered exception in processing Bronkhorst data: {e}. Not updating measurement")
 

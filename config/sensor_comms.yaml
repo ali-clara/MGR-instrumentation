@@ -8,20 +8,20 @@ Picarro Water:
   serial port: "COM9"
   baud rate: 19200
 Laser Distance Sensor:
-  serial port: "COM8" # laptop
-  # serial port: "COM6" # lab computer
+  # serial port: "COM8" # laptop
+  serial port: "COM6" # lab computer
   baud rate: 19200
 Abakus Particle Counter:
-  serial port: "COM9" # laptop
-  # serial port: "COM4" # lab computer
+  # serial port: "COM9" # laptop
+  serial port: "COM4" # lab computer
   baud rate: 38400
 Flowmeter SLI2000 (Green):
-  # serial port: "COM3" # lab computer
-  serial port: "COM9" # laptop
+  serial port: "COM3" # lab computer
+  # serial port: "COM9" # laptop
   baud rate: 115200
 Flowmeter SLS1500 (Black):
-  # serial port: "COM5" # lab computer
-  serial port: "COM9" # laptop
+  serial port: "COM5" # lab computer
+  # serial port: "COM9" # laptop
   baud rate: 115200
 Bronkhorst Pressure:
   # serial port: "COM3" # laptop

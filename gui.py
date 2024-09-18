@@ -152,14 +152,15 @@ class ApplicationWindow(QWidget):
         self.threadpool = QThreadPool()
             
         # Initiate two timers:
+        update_period = 500 # ms
         # One for updating the plots...
         self.plot_figs_timer = QTimer()
         self.plot_figs_timer.timeout.connect(self.update_plots)
-        self.plot_figs_timer.start(250)
+        self.plot_figs_timer.start(update_period)
         # ...and one for collecting, processing, and saving data
         self.execution_timer = QTimer()
         self.execution_timer.timeout.connect(self.run_data_collection)
-        self.execution_timer.start(500)
+        self.execution_timer.start(update_period)
         
         # Show the window
         self.show()

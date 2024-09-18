@@ -117,7 +117,7 @@ class FlowMeter():
     def query(self):
         """Queries the flowmeter. Returns raw data and timestamp
             Returns - timestamp (float, epoch time), data_out ([int], raw flowmeter reading)"""
-        logger.info(f"Querying Flowmeter {self.sensor_type}")
+        # logger.info(f"Querying Flowmeter {self.sensor_type}")
         self.ser.write(self.QUERY)
         timestamp = time.time()
         response = self._read_flowmeter()
