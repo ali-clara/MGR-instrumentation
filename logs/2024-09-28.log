@@ -1,0 +1,770 @@
+INFO: 11:35:05 - main_pipeline.sensor:  Couldn't find Picarro at port COM9, shadowing sensor calls with substitute functions
+INFO: 11:35:05 - main_pipeline.sensor:  Successfully connected to port COM4, using real Abakus hardware
+INFO: 11:35:05 - main_pipeline.sensor:  Successfully connected to port COM3 and COM5, using real Flowmeter hardware
+INFO: 11:35:05 - main_pipeline.sensor:  Successfully connected to port COM6, using real Dimetix hardware
+INFO: 11:35:05 - main_pipeline.sensor:  Successfully connected to port COM7, using real Bronkhorst hardware
+INFO: 11:35:06 - sensor_interfaces.abakus_interface:  Connected to serial port COM4 with baud 38400
+INFO: 11:35:06 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM3 with baud 115200
+INFO: 11:35:06 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM5 with baud 115200
+INFO: 11:35:06 - sensor_interfaces.laser_interface:  Connected to serial port COM6 with baud 19200
+INFO: 11:35:06 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM9 with baud 19200
+INFO: 11:35:06 - sensor_interfaces.bronkhorst_interface:  Connected to serial port COM7 with baud 38400
+INFO: 11:35:06 - main_pipeline.sensor:  Sensor class initiated
+INFO: 11:35:06 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 11:35:06 - main_pipeline.writer:  Display class initiated
+INFO: 11:35:14 - main_pipeline.sensor:  Initializing sensors
+INFO: 11:35:14 - sensor_interfaces.abakus_interface:  Initializing Abakus
+INFO: 11:35:14 - sensor_interfaces.abakus_interface:  Abakus measurements started
+INFO: 11:35:14 - sensor_interfaces.abakus_interface:  Initialization attempt 1/10
+INFO: 11:35:14 - sensor_interfaces.abakus_interface:  Initialization attempt 2/10
+INFO: 11:35:14 - sensor_interfaces.abakus_interface:  Initialization attempt 3/10
+INFO: 11:35:14 - sensor_interfaces.abakus_interface:  Abakus initialized
+INFO: 11:35:14 - sensor_interfaces.sim_instruments:  Initializing Picarro
+INFO: 11:35:14 - sensor_interfaces.sim_instruments:  Initialized Picarro
+INFO: 11:35:14 - sensor_interfaces.laser_interface:  Dimetix laser turned on
+INFO: 11:35:14 - sensor_interfaces.laser_interface:  Laser distance initialization attempt 1/10
+INFO: 11:35:15 - sensor_interfaces.laser_interface:  Laser distance initialized
+INFO: 11:35:15 - sensor_interfaces.laser_interface:  Laser temperature initialization attempt 1/10
+INFO: 11:35:15 - sensor_interfaces.laser_interface:  Laser temperature initialized
+INFO: 11:35:15 - sensor_interfaces.bronkhorst_interface:  Initialization attempt 1/10
+INFO: 11:35:15 - sensor_interfaces.bronkhorst_interface:  Bronkhorst initialized
+INFO: 11:35:15 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 11:35:15 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 11:35:15 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 11:35:15 - sensor_interfaces.flowmeter_interface:  Flowmeter sli2000 initialized
+INFO: 11:35:15 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 11:35:15 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 11:35:15 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 11:35:15 - sensor_interfaces.flowmeter_interface:  Flowmeter sls1500 initialized
+INFO: 11:35:15 - main_pipeline.sensor:  Finished initializing sensors
+WARNING: 11:35:21 - main_pipeline.interpreter:  Error in extracting time and data from Abakus reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 11:35:21 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLI2000 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 11:35:21 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLS1500 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 11:35:21 - main_pipeline.interpreter:  Error in extracting time and data from laser reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 11:35:21 - __main__:  Error updating the Picarro Gas buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Laser Distance Sensor buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Abakus Particle Counter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Abakus Particle Counter buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Flowmeter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Bronkhorst Pressure buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:21 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 11:35:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:30 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:30 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:30 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:30 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:30 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:30 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:41 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:41 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:41 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:41 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:41 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:41 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:54 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:54 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:54 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:54 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:54 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:54 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:58 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:58 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:58 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:58 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:58 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:58 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:58 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:58 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:58 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:35:58 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:09 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:09 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:09 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:09 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:09 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:09 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:09 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:11 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:11 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:11 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:11 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:11 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:11 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:11 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:11 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:11 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:12 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:12 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:12 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:12 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:12 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:12 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:12 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:12 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:12 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:14 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:14 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:14 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:14 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:14 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:16 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:22 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:22 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:22 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:26 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:26 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:26 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:26 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:27 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:27 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:27 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:27 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:28 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:28 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:28 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:28 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:32 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:32 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:32 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:32 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:32 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:32 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:32 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:33 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:33 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:33 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:33 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:33 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:33 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:33 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:33 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:40 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:40 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:40 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:40 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:40 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:40 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:40 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:40 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:40 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:40 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 11:36:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+INFO: 11:40:06 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 11:43:56 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 11:45:28 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 11:46:18 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 11:47:42 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 11:48:30 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 11:49:37 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:03:23 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:03:34 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:03:53 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:15:48 - main_pipeline.sensor:  Couldn't find Picarro at port COM9, shadowing sensor calls with substitute functions
+INFO: 12:15:49 - main_pipeline.sensor:  Successfully connected to port COM4, using real Abakus hardware
+INFO: 12:15:49 - main_pipeline.sensor:  Successfully connected to port COM3 and COM5, using real Flowmeter hardware
+INFO: 12:15:49 - main_pipeline.sensor:  Successfully connected to port COM6, using real Dimetix hardware
+INFO: 12:15:49 - main_pipeline.sensor:  Successfully connected to port COM7, using real Bronkhorst hardware
+INFO: 12:15:49 - sensor_interfaces.abakus_interface:  Connected to serial port COM4 with baud 38400
+INFO: 12:15:49 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM3 with baud 115200
+INFO: 12:15:49 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM5 with baud 115200
+INFO: 12:15:49 - sensor_interfaces.laser_interface:  Connected to serial port COM6 with baud 19200
+INFO: 12:15:49 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM9 with baud 19200
+INFO: 12:15:49 - sensor_interfaces.bronkhorst_interface:  Connected to serial port COM7 with baud 38400
+INFO: 12:15:49 - main_pipeline.sensor:  Sensor class initiated
+INFO: 12:15:49 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 12:15:49 - main_pipeline.writer:  Display class initiated
+INFO: 12:15:52 - main_pipeline.sensor:  Initializing sensors
+INFO: 12:15:52 - sensor_interfaces.abakus_interface:  Initializing Abakus
+INFO: 12:15:52 - sensor_interfaces.abakus_interface:  Abakus measurements started
+INFO: 12:15:52 - sensor_interfaces.abakus_interface:  Initialization attempt 1/10
+INFO: 12:15:52 - sensor_interfaces.abakus_interface:  Initialization attempt 2/10
+INFO: 12:15:52 - sensor_interfaces.abakus_interface:  Initialization attempt 3/10
+INFO: 12:15:53 - sensor_interfaces.abakus_interface:  Abakus initialized
+INFO: 12:15:53 - sensor_interfaces.sim_instruments:  Initializing Picarro
+INFO: 12:15:53 - sensor_interfaces.sim_instruments:  Initialized Picarro
+INFO: 12:15:53 - sensor_interfaces.laser_interface:  Dimetix laser turned on
+INFO: 12:15:53 - sensor_interfaces.laser_interface:  Laser distance initialization attempt 1/10
+INFO: 12:15:53 - sensor_interfaces.laser_interface:  Laser distance initialized
+INFO: 12:15:53 - sensor_interfaces.laser_interface:  Laser temperature initialization attempt 1/10
+INFO: 12:15:53 - sensor_interfaces.laser_interface:  Laser temperature initialized
+INFO: 12:15:53 - sensor_interfaces.bronkhorst_interface:  Initialization attempt 1/10
+INFO: 12:15:53 - sensor_interfaces.bronkhorst_interface:  Bronkhorst initialized
+INFO: 12:15:53 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 12:15:53 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 12:15:56 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 12:15:56 - sensor_interfaces.flowmeter_interface:  Flowmeter sli2000 initialized
+INFO: 12:15:56 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 12:15:56 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 12:15:59 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 12:15:59 - sensor_interfaces.flowmeter_interface:  Flowmeter sls1500 initialized
+INFO: 12:15:59 - main_pipeline.sensor:  Finished initializing sensors
+WARNING: 12:16:01 - main_pipeline.interpreter:  Error in extracting time and data from Abakus reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:16:01 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLI2000 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:16:01 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLS1500 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:16:01 - main_pipeline.interpreter:  Error in extracting time and data from laser reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:16:02 - __main__:  Error updating the Picarro Gas buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Laser Distance Sensor buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Abakus Particle Counter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Abakus Particle Counter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Flowmeter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Bronkhorst Pressure buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:16:02 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:02 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:02 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:02 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:02 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:04 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:04 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:04 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:04 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:04 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:04 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:04 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:04 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:04 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:06 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:06 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:08 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:11 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:16:11 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+INFO: 12:16:12 - main_pipeline.sensor:  Shutting down sensors
+INFO: 12:16:12 - sensor_interfaces.abakus_interface:  Abakus measurements stopped
+INFO: 12:16:13 - sensor_interfaces.laser_interface:  Dimetix laser turned off
+INFO: 12:16:13 - main_pipeline.sensor:  Finished shutting down sensors
+INFO: 12:16:18 - main_pipeline.sensor:  Shutting down sensors
+INFO: 12:16:18 - sensor_interfaces.abakus_interface:  Abakus measurements stopped
+INFO: 12:16:18 - sensor_interfaces.laser_interface:  Dimetix laser turned off
+INFO: 12:16:18 - main_pipeline.sensor:  Finished shutting down sensors
+INFO: 12:26:35 - main_pipeline.sensor:  Couldn't find Picarro at port COM9, shadowing sensor calls with substitute functions
+INFO: 12:26:35 - main_pipeline.sensor:  Successfully connected to port COM4, using real Abakus hardware
+INFO: 12:26:36 - main_pipeline.sensor:  Successfully connected to port COM3 and COM5, using real Flowmeter hardware
+INFO: 12:26:36 - main_pipeline.sensor:  Successfully connected to port COM6, using real Dimetix hardware
+INFO: 12:26:36 - main_pipeline.sensor:  Successfully connected to port COM7, using real Bronkhorst hardware
+INFO: 12:26:36 - sensor_interfaces.abakus_interface:  Connected to serial port COM4 with baud 38400
+INFO: 12:26:36 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM3 with baud 115200
+INFO: 12:26:36 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM5 with baud 115200
+INFO: 12:26:36 - sensor_interfaces.laser_interface:  Connected to serial port COM6 with baud 19200
+INFO: 12:26:36 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM9 with baud 19200
+INFO: 12:26:36 - sensor_interfaces.bronkhorst_interface:  Connected to serial port COM7 with baud 38400
+INFO: 12:26:36 - main_pipeline.sensor:  Sensor class initiated
+INFO: 12:26:36 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 12:26:36 - main_pipeline.writer:  Display class initiated
+INFO: 12:26:38 - main_pipeline.sensor:  Initializing sensors
+INFO: 12:26:38 - sensor_interfaces.abakus_interface:  Initializing Abakus
+INFO: 12:26:38 - sensor_interfaces.abakus_interface:  Abakus measurements started
+INFO: 12:26:38 - sensor_interfaces.abakus_interface:  Initialization attempt 1/10
+INFO: 12:26:39 - sensor_interfaces.abakus_interface:  Initialization attempt 2/10
+INFO: 12:26:39 - sensor_interfaces.abakus_interface:  Initialization attempt 3/10
+INFO: 12:26:39 - sensor_interfaces.abakus_interface:  Abakus initialized
+INFO: 12:26:39 - sensor_interfaces.sim_instruments:  Initializing Picarro
+INFO: 12:26:39 - sensor_interfaces.sim_instruments:  Initialized Picarro
+INFO: 12:26:39 - sensor_interfaces.laser_interface:  Dimetix laser turned on
+INFO: 12:26:39 - sensor_interfaces.laser_interface:  Laser distance initialization attempt 1/10
+INFO: 12:26:39 - sensor_interfaces.laser_interface:  Laser distance initialized
+INFO: 12:26:39 - sensor_interfaces.laser_interface:  Laser temperature initialization attempt 1/10
+INFO: 12:26:40 - sensor_interfaces.laser_interface:  Laser temperature initialized
+INFO: 12:26:40 - sensor_interfaces.bronkhorst_interface:  Initialization attempt 1/10
+WARNING: 12:26:40 - sensor_interfaces.bronkhorst_interface:  Exception in Bronkhorst initialization: too many values to unpack (expected 2)
+WARNING: 12:26:40 - sensor_interfaces.bronkhorst_interface:  Bronkhorst failed to initialize after 10 attempts
+INFO: 12:26:40 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 12:26:40 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 12:26:43 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 12:26:43 - sensor_interfaces.flowmeter_interface:  Initialization attempt 3/10
+INFO: 12:26:43 - sensor_interfaces.flowmeter_interface:  Initialization attempt 4/10
+INFO: 12:26:43 - sensor_interfaces.flowmeter_interface:  Flowmeter sli2000 initialized
+INFO: 12:26:43 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 12:26:43 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 12:26:47 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 12:26:47 - sensor_interfaces.flowmeter_interface:  Flowmeter sls1500 initialized
+INFO: 12:26:47 - main_pipeline.sensor:  Finished initializing sensors
+WARNING: 12:26:51 - main_pipeline.interpreter:  Error in extracting time and data from Abakus reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:26:51 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLI2000 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:26:51 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLS1500 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:26:51 - main_pipeline.interpreter:  Error in extracting time and data from laser reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:26:51 - __main__:  Error updating the Picarro Gas buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Laser Distance Sensor buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Abakus Particle Counter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Abakus Particle Counter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Flowmeter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Bronkhorst Pressure buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:51 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:26:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:57 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:57 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:57 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:57 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:57 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:57 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:57 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:57 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:57 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:59 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:59 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:59 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:59 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:59 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:26:59 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:00 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:01 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:01 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:01 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:01 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:01 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:01 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:02 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:02 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:02 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:02 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:02 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:02 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:27:03 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+INFO: 12:27:07 - main_pipeline.sensor:  Shutting down sensors
+INFO: 12:27:07 - sensor_interfaces.abakus_interface:  Abakus measurements stopped
+INFO: 12:27:07 - sensor_interfaces.laser_interface:  Dimetix laser turned off
+INFO: 12:27:07 - main_pipeline.sensor:  Finished shutting down sensors
+INFO: 12:28:54 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:28:55 - __main__:  Initialization attempt 1/10
+INFO: 12:28:55 - __main__:  Bronkhorst initialized
+INFO: 12:29:01 - __main__:  Initialization attempt 1/10
+INFO: 12:29:01 - __main__:  Bronkhorst initialized
+INFO: 12:29:02 - __main__:  Initialization attempt 1/10
+INFO: 12:29:02 - __main__:  Bronkhorst initialized
+INFO: 12:29:03 - __main__:  Initialization attempt 1/10
+INFO: 12:29:03 - __main__:  Bronkhorst initialized
+INFO: 12:29:03 - __main__:  Initialization attempt 1/10
+INFO: 12:29:03 - __main__:  Bronkhorst initialized
+INFO: 12:29:21 - main_pipeline.sensor:  Couldn't find Picarro at port COM9, shadowing sensor calls with substitute functions
+INFO: 12:29:21 - main_pipeline.sensor:  Successfully connected to port COM4, using real Abakus hardware
+INFO: 12:29:21 - main_pipeline.sensor:  Successfully connected to port COM3 and COM5, using real Flowmeter hardware
+INFO: 12:29:21 - main_pipeline.sensor:  Successfully connected to port COM6, using real Dimetix hardware
+INFO: 12:29:21 - main_pipeline.sensor:  Successfully connected to port COM7, using real Bronkhorst hardware
+INFO: 12:29:21 - sensor_interfaces.abakus_interface:  Connected to serial port COM4 with baud 38400
+INFO: 12:29:21 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM3 with baud 115200
+INFO: 12:29:21 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM5 with baud 115200
+INFO: 12:29:21 - sensor_interfaces.laser_interface:  Connected to serial port COM6 with baud 19200
+INFO: 12:29:21 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM9 with baud 19200
+INFO: 12:29:22 - sensor_interfaces.bronkhorst_interface:  Connected to serial port COM7 with baud 38400
+INFO: 12:29:22 - main_pipeline.sensor:  Sensor class initiated
+INFO: 12:29:22 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 12:29:22 - main_pipeline.writer:  Display class initiated
+INFO: 12:29:23 - main_pipeline.sensor:  Initializing sensors
+INFO: 12:29:23 - sensor_interfaces.abakus_interface:  Initializing Abakus
+INFO: 12:29:23 - sensor_interfaces.abakus_interface:  Abakus measurements started
+INFO: 12:29:23 - sensor_interfaces.abakus_interface:  Initialization attempt 1/10
+INFO: 12:29:24 - sensor_interfaces.abakus_interface:  Initialization attempt 2/10
+INFO: 12:29:24 - sensor_interfaces.abakus_interface:  Initialization attempt 3/10
+INFO: 12:29:24 - sensor_interfaces.abakus_interface:  Abakus initialized
+INFO: 12:29:24 - sensor_interfaces.sim_instruments:  Initializing Picarro
+INFO: 12:29:24 - sensor_interfaces.sim_instruments:  Initialized Picarro
+INFO: 12:29:24 - sensor_interfaces.laser_interface:  Dimetix laser turned on
+INFO: 12:29:24 - sensor_interfaces.laser_interface:  Laser distance initialization attempt 1/10
+INFO: 12:29:24 - sensor_interfaces.laser_interface:  Laser distance initialized
+INFO: 12:29:24 - sensor_interfaces.laser_interface:  Laser temperature initialization attempt 1/10
+INFO: 12:29:24 - sensor_interfaces.laser_interface:  Laser temperature initialized
+INFO: 12:29:24 - sensor_interfaces.bronkhorst_interface:  Initialization attempt 1/10
+INFO: 12:29:25 - sensor_interfaces.bronkhorst_interface:  Bronkhorst initialized
+INFO: 12:29:25 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 12:29:25 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 12:29:30 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 12:29:30 - sensor_interfaces.flowmeter_interface:  Initialization attempt 3/10
+INFO: 12:29:30 - sensor_interfaces.flowmeter_interface:  Initialization attempt 4/10
+INFO: 12:29:30 - sensor_interfaces.flowmeter_interface:  Initialization attempt 5/10
+INFO: 12:29:30 - sensor_interfaces.flowmeter_interface:  Initialization attempt 6/10
+INFO: 12:29:30 - sensor_interfaces.flowmeter_interface:  Initialization attempt 7/10
+INFO: 12:29:30 - sensor_interfaces.flowmeter_interface:  Flowmeter sli2000 initialized
+INFO: 12:29:30 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 12:29:30 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 12:29:35 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 12:29:35 - sensor_interfaces.flowmeter_interface:  Flowmeter sls1500 initialized
+INFO: 12:29:35 - main_pipeline.sensor:  Finished initializing sensors
+WARNING: 12:29:37 - main_pipeline.interpreter:  Error in extracting time and data from Abakus reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:29:37 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLI2000 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:29:37 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLS1500 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:29:37 - main_pipeline.interpreter:  Error in extracting time and data from laser reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:29:37 - __main__:  Error updating the Picarro Gas buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Laser Distance Sensor buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Abakus Particle Counter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Abakus Particle Counter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Flowmeter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Bronkhorst Pressure buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:37 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:29:38 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:38 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:38 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:38 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:41 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:41 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:42 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:42 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:42 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:42 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:42 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:42 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:29:42 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+INFO: 12:29:47 - main_pipeline.sensor:  Shutting down sensors
+INFO: 12:29:47 - sensor_interfaces.abakus_interface:  Abakus measurements stopped
+INFO: 12:29:47 - sensor_interfaces.laser_interface:  Dimetix laser turned off
+INFO: 12:29:47 - main_pipeline.sensor:  Finished shutting down sensors
+INFO: 12:36:13 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:36:15 - __main__:  Initialization attempt 1/10
+INFO: 12:36:15 - __main__:  Bronkhorst initialized
+INFO: 12:37:19 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:38:22 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:38:59 - main_pipeline.sensor:  Couldn't find Picarro at port COM9, shadowing sensor calls with substitute functions
+INFO: 12:38:59 - main_pipeline.sensor:  Successfully connected to port COM4, using real Abakus hardware
+INFO: 12:38:59 - main_pipeline.sensor:  Successfully connected to port COM3 and COM5, using real Flowmeter hardware
+INFO: 12:38:59 - main_pipeline.sensor:  Successfully connected to port COM6, using real Dimetix hardware
+INFO: 12:38:59 - main_pipeline.sensor:  Successfully connected to port COM7, using real Bronkhorst hardware
+INFO: 12:38:59 - sensor_interfaces.abakus_interface:  Connected to serial port COM4 with baud 38400
+INFO: 12:38:59 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM3 with baud 115200
+INFO: 12:38:59 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM5 with baud 115200
+INFO: 12:38:59 - sensor_interfaces.laser_interface:  Connected to serial port COM6 with baud 19200
+INFO: 12:38:59 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM9 with baud 19200
+INFO: 12:38:59 - sensor_interfaces.bronkhorst_interface:  Connected to serial port COM7 with baud 38400
+INFO: 12:39:00 - main_pipeline.sensor:  Sensor class initiated
+INFO: 12:39:00 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 12:39:00 - main_pipeline.writer:  Display class initiated
+INFO: 12:39:02 - main_pipeline.sensor:  Initializing sensors
+INFO: 12:39:02 - sensor_interfaces.abakus_interface:  Initializing Abakus
+INFO: 12:39:02 - sensor_interfaces.abakus_interface:  Abakus measurements started
+INFO: 12:39:02 - sensor_interfaces.abakus_interface:  Initialization attempt 1/10
+INFO: 12:39:03 - sensor_interfaces.abakus_interface:  Initialization attempt 2/10
+INFO: 12:39:03 - sensor_interfaces.abakus_interface:  Initialization attempt 3/10
+INFO: 12:39:03 - sensor_interfaces.abakus_interface:  Abakus initialized
+INFO: 12:39:03 - sensor_interfaces.sim_instruments:  Initializing Picarro
+INFO: 12:39:03 - sensor_interfaces.sim_instruments:  Initialized Picarro
+INFO: 12:39:03 - sensor_interfaces.laser_interface:  Dimetix laser turned on
+INFO: 12:39:03 - sensor_interfaces.laser_interface:  Laser distance initialization attempt 1/10
+INFO: 12:39:03 - sensor_interfaces.laser_interface:  Laser distance initialized
+INFO: 12:39:03 - sensor_interfaces.laser_interface:  Laser temperature initialization attempt 1/10
+INFO: 12:39:03 - sensor_interfaces.laser_interface:  Laser temperature initialized
+INFO: 12:39:03 - sensor_interfaces.bronkhorst_interface:  Initialization attempt 1/10
+INFO: 12:39:03 - sensor_interfaces.bronkhorst_interface:  Bronkhorst initialized
+INFO: 12:39:03 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 12:39:03 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 12:39:08 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 12:39:08 - sensor_interfaces.flowmeter_interface:  Flowmeter sli2000 initialized
+INFO: 12:39:08 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 12:39:08 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 12:39:12 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 12:39:12 - sensor_interfaces.flowmeter_interface:  Flowmeter sls1500 initialized
+INFO: 12:39:12 - main_pipeline.sensor:  Finished initializing sensors
+WARNING: 12:39:14 - main_pipeline.interpreter:  Error in extracting time and data from Abakus reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:39:14 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLI2000 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:39:14 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLS1500 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:39:14 - main_pipeline.interpreter:  Error in extracting time and data from laser reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:39:14 - __main__:  Error updating the Picarro Gas buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Laser Distance Sensor buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Abakus Particle Counter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Abakus Particle Counter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Flowmeter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Bronkhorst Pressure buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:14 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:39:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:18 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:20 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:20 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:20 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:20 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:20 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:21 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:22 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:22 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:22 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:22 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:22 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:22 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:23 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:23 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:23 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:23 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:23 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:23 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:23 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:24 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:25 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:27 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:27 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:27 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:27 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:27 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:28 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:28 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:28 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:28 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:28 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:28 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:28 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:29 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:29 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:29 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:29 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:29 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:29 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:29 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:29 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:29 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:29 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+WARNING: 12:39:29 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: Bad checksum. Not updating measurement.
+INFO: 12:39:35 - main_pipeline.sensor:  Shutting down sensors
+INFO: 12:39:35 - sensor_interfaces.abakus_interface:  Abakus measurements stopped
+INFO: 12:39:35 - sensor_interfaces.laser_interface:  Dimetix laser turned off
+INFO: 12:39:35 - main_pipeline.sensor:  Finished shutting down sensors
+INFO: 12:40:14 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:40:55 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:40:56 - __main__:  Initialization attempt 1/10
+INFO: 12:40:56 - __main__:  Bronkhorst initialized
+INFO: 12:41:27 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:41:30 - __main__:  Initialization attempt 1/10
+INFO: 12:41:30 - __main__:  Bronkhorst initialized
+INFO: 12:42:05 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:42:06 - __main__:  Initialization attempt 1/10
+INFO: 12:42:06 - __main__:  Bronkhorst initialized
+INFO: 12:42:15 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:42:29 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:43:00 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:43:14 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:43:45 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:44:00 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:44:01 - __main__:  Initialization attempt 1/10
+INFO: 12:44:01 - __main__:  Bronkhorst initialized
+INFO: 12:44:24 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:44:25 - __main__:  Initialization attempt 1/10
+INFO: 12:44:25 - __main__:  Bronkhorst initialized
+INFO: 12:45:15 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:45:15 - __main__:  Initialization attempt 1/10
+INFO: 12:45:15 - __main__:  Bronkhorst initialized
+INFO: 12:45:28 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:46:01 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:46:07 - __main__:  Initialization attempt 1/10
+INFO: 12:46:07 - __main__:  Bronkhorst initialized
+INFO: 12:46:51 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:46:52 - __main__:  Initialization attempt 1/10
+INFO: 12:46:52 - __main__:  Bronkhorst initialized
+INFO: 12:46:57 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:47:42 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:47:43 - __main__:  Initialization attempt 1/10
+INFO: 12:47:43 - __main__:  Bronkhorst initialized
+INFO: 12:47:57 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:48:17 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:50:43 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:50:44 - __main__:  Initialization attempt 1/10
+INFO: 12:50:44 - __main__:  Bronkhorst initialized
+INFO: 12:50:59 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:51:00 - __main__:  Initialization attempt 1/10
+INFO: 12:51:00 - __main__:  Bronkhorst initialized
+INFO: 12:52:07 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:52:08 - __main__:  Initialization attempt 1/10
+INFO: 12:52:08 - __main__:  Bronkhorst initialized
+INFO: 12:52:19 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:52:29 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:53:05 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:54:37 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 12:54:47 - __main__:  Connected to serial port COM7 with baud 38400

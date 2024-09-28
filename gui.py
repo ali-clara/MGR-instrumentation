@@ -794,7 +794,7 @@ class ApplicationWindow(QWidget):
         for each sense/interpret/save process (see run_data_collection for how these are all used)
         """
         # Create each main object of the pipeline
-        self.sensor = Sensor(debug=True)
+        self.sensor = Sensor(debug=False)
         self.interpreter = Interpreter()
         self.writer = Writer()
 

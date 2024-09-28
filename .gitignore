@@ -1,4 +1,5 @@
-# Ignore all log files
-*.log
-# Ignore all .csv
-*.csv
+# If individual files ever get >2GB, they can't be pushed to GitHub. You can tell GIT to ignore those files here
+# Uncomment to ignore all log files
+# *.log
+# Uncomment to ignore all .csv
+# *.csv

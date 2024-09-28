@@ -397,31 +397,30 @@ class Interpreter():
 
         # Try to split up the data into the readings we expect
         try:
-            timestamp, (setpoint_and_meas, fmeas_and_temp) = bronkhorst_data
+            timestamp, (fsetpoint, meas, fmeas_and_temp) = bronkhorst_data
         # If that didn't work, log it
         except KeyError as e:
             logger.warning(f"Error in extracting time and data from bronkhorst reading: {e}. Probably not a tuple. Not updating measurement")
         # If it did work, parse the data
         else:
-            if setpoint_and_meas == "nan":
+            if fsetpoint == "nan":
                 self.big_data["Bronkhorst Pressure"]["Time (epoch)"] = timestamp
                 return
             try:
-                # Parsing setpoint and measurement is straightforward - 
+                # Parsing measurement is straightforward - 
                 # First, slice the setpoint and measurement out of the chained response and convert the hex string to an integer
-                setpoint = int(setpoint_and_meas[11:15], 16)
-                measure = int(setpoint_and_meas[19:], 16)
+                measure = int(meas[11:15], 16)
                 # Then, scale the raw output (an int between 0-32000) to the measurement signal (0-100%)
-                setpoint = np.interp(setpoint, [0,32000], [0,100.0])
                 measure = np.interp(measure, [0,41942], [0,131.07]) # This is basically the same as the setpoint, but can measure over 100%
 
                 # Parsing fmeasure and temperature is a little more complicated -
                 # grab their respective slices from the chained response, then convert from IEEE754 floating point notation to decimal
+                fsetpoint = self.hex_to_ieee754_dec(fsetpoint[11:19])
                 fmeasure = self.hex_to_ieee754_dec(fmeas_and_temp[11:19])
                 temp = self.hex_to_ieee754_dec(fmeas_and_temp[23:])
 
                 self.big_data["Bronkhorst Pressure"]["Time (epoch)"] = timestamp
-                self.big_data["Bronkhorst Pressure"]["Data"]["Setpoint"] = setpoint
+                self.big_data["Bronkhorst Pressure"]["Data"]["Setpoint (mbar a)"] = fsetpoint
                 self.big_data["Bronkhorst Pressure"]["Data"]["Measurement (%)"] = measure
                 self.big_data["Bronkhorst Pressure"]["Data"]["Measurement (mbar a)"] = fmeasure
                 self.big_data["Bronkhorst Pressure"]["Data"]["Temperature (C)"] = temp

@@ -25,7 +25,7 @@ class Bronkhorst():
         # Bronkhorst communication codes
         self.GET_MEAS = b':06030401210120\r\n' # gets the measurement as a percent of the total (0-32000 => 0-100%)
         self.GET_FMEAS = b':06800421402140\r\n' # gets the measurement as a float
-        self.GET_SETPOINT = b':06030401210121\r\n' # gets the setpoint as a percent of the total
+        self.GET_FSETPOINT = b':06800421412143\r\n' # gets the setpoint in mBAR
         self.GET_TEMP = b':06800421472147\r\n' # gets the temp as a float
         self.GET_UNIT = b':078004017F017F07\r\n' # gets the unit as a string
 
@@ -57,6 +57,22 @@ class Bronkhorst():
         self.ser.write(self.GET_UNIT)
         output = self.ser.read_until(b'\r\n').decode()
         return output
+
+    def send_setpoint(self):
+        self.SEND_SETPOINT = b':0880012143443B8000\r\n' # sets the setpoint in mBAR
+        self.ser.write(self.SEND_SETPOINT)
+        self.ser.read_until(b'\n').decode()
+
+        # self.ser.write(self.GET_FSETPOINT)
+        # fsetpoint = self.ser.read_until(b'\n').decode()
+        # print(fsetpoint)
+        # try:
+        #     fsetpoint = hex_to_ieee754_dec(fsetpoint[11:19])
+        # except:
+        #     fsetpoint = int(fsetpoint[7:11], 16)
+        #     print(fsetpoint)
+        # else:
+        #     print(fsetpoint)
     
     def initialize_bronkhorst(self, timeout=10):
         """
@@ -77,9 +93,9 @@ class Bronkhorst():
                 self.fmeasure_unit = bytearray.fromhex(unit).decode().strip()
                 # grab the device measurements
                 timestamp, output = self.query()
-                setpoint_and_meas, fmeas_and_temp = output
+                fsetpoint, meas, fmeas_and_temp = output
                 # Check if the measurements are the lengths we expect and the timestamp is the type we expect
-                if len(setpoint_and_meas) == 25 and len(fmeas_and_temp) == 33 and type(timestamp) == float:
+                if len(fsetpoint) == 21 and len(meas) == 17 and len(fmeas_and_temp) == 33 and type(timestamp) == float:
                     logger.info("Bronkhorst initialized")
                     return 1
                 
@@ -98,14 +114,15 @@ class Bronkhorst():
                 - timestamp: float, epoch time
                 - output: (bytestr, bytestr), chained responses for measure & setpoint and fmeasure & temperature
         """
-
-        self.ser.write(self.GET_SETPOINT_MEAS)
-        setpoint_and_meas = self.ser.read_until(b'\r\n').decode()
+        self.ser.write(self.GET_FSETPOINT)
+        fsetpoint = self.ser.read_until(b'\r\n').decode()
+        self.ser.write(self.GET_MEAS)
+        meas = self.ser.read_until(b'\r\n').decode()
         self.ser.write(self.GET_FMEAS_TEMP)
         fmeas_and_temp = self.ser.read_until(b'\r\n').decode()
         timestamp = time.time()
 
-        output = (setpoint_and_meas, fmeas_and_temp)
+        output = (fsetpoint, meas, fmeas_and_temp)
         
         return timestamp, output
     
@@ -166,19 +183,19 @@ if __name__ == "__main__":
         """Method to process Bronkhorst output when querying setpoint/measurement and fmeasure/temperature, modify if
         we add query values. I /really/ didn't want to write a general function for any potential bronkhorst return"""
 
-        setpoint_and_meas, fmeas_and_temp = output
+        fsetpoint, measure, fmeas_and_temp = output
 
-        print(setpoint_and_meas)
+        # print(setpoint_and_meas)
         print(fmeas_and_temp)
         
         # Parsing setpoint and measurement is straightforward - 
         # First, slice the setpoint and measurement out of the chained response and convert the hex string to an integer
         # Then, scale the raw output (an int between 0-32000) to the measurement signal (0-100%)
-        setpoint = int(setpoint_and_meas[11:15], 16)
-        measure = int(setpoint_and_meas[19:], 16)
+        # setpoint = int(setpoint_and_meas[11:15], 16)
+        # measure = int(setpoint_and_meas[19:], 16)
 
-        setpoint = np.interp(setpoint, [0,32000], [0,100.0])
-        measure = np.interp(measure, [0,41942], [0,131.07]) # This is bascially the same as the setpoint, but can measure over 100%
+        # setpoint = np.interp(setpoint, [0,32000], [0,100.0])
+        # measure = np.interp(measure, [0,41942], [0,131.07]) # This is bascially the same as the setpoint, but can measure over 100%
 
         # Parsing fmeasure and temperature is a little more complicated -
         # grab their respective slices from the chained response, then convert from IEEE754 floating point notation to decimal
@@ -186,8 +203,8 @@ if __name__ == "__main__":
         temp = hex_to_ieee754_dec(fmeas_and_temp[23:])
 
         print(timestamp)
-        print(f"Setpoint: {setpoint}%")
-        print(f"Measurement: {measure}%")
+        # print(f"Setpoint: {setpoint}%")
+        # print(f"Measurement: {measure}%")
         print(f"Fmeasure: {fmeasure} {unit}")
         print(f"Temperature: {temp}°C")
 
@@ -202,7 +219,7 @@ if __name__ == "__main__":
     print("Testing serial communication\n")
     stop = False
     while not stop:
-        command = input("a: Initialize bronkhorst, b: Check unit, c: Query, x: Quit \n")
+        command = input("a: Initialize bronkhorst, b: Check unit, c: Query, d: Send Setpoint, x: Quit \n")
         if command == "a" or command == "A":
             my_bronkhorst.initialize_bronkhorst()
         elif command == "c" or command == "C":
@@ -214,6 +231,9 @@ if __name__ == "__main__":
             unit = output[13:]
             unit_ascii = bytearray.fromhex(unit).decode().strip()
             print(f"Bronkhorst returning measurements in {unit_ascii}")
+        elif command == "d" or command == "D":
+            my_bronkhorst.send_setpoint()
+            
         elif command == "x" or command == "X":
             stop = True
         else:

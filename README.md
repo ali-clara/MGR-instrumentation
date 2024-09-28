@@ -1,6 +1,13 @@
 # MGR Instrumentation
 Codebase and documentation for unified data collection of the OSU COLDEX Marine and Geologic Reserve lab instrumentation.
 
+<style>
+    .highlight {
+        color: black;
+        background-color: #FFC107;
+    }
+</style>
+
 ## Overview
 
 The purpose of this repository is to provide a centralized hub for the sensors and instruments used to collect ice core data at COLDEX, the Center for OLDest ice EXploration. Sensor status, control, and live data streaming are all managed with a GUI. Data and notes are timestamped and saved to the disk - for more info, see [Data Management](#data-management). 
@@ -87,13 +94,13 @@ The GUI is divided into three main panels.
 
 This panel has general buttons for sensor initialization/shutdown and data collection start/stop. For the sensors that have control capability, sensor-specific buttons exist as well.
 
-Each sensor has a status indicator that updates after initialization and shutdown. The status options are <span style="background-color:#AF5189">offline</span>, <span style="background-color:#619CD2">online</span>, <span style="background-color:#FFC107">shadow hardware</span>, and <span style="background-color:#D55E00">error</span>.
+Each sensor has a status indicator that updates after initialization and shutdown. The status options are <span style="background-color:#AF5189">offline</span>, <span style="background-color:#619CD2">online</span>, <span class="highlight">shadow hardware</span>, and <span style="background-color:#D55E00">error</span>.
 
 <span style="background-color:#AF5189">Offline</span>: The sensor is either shut down or not initialized.
 
 <span style="background-color:#619CD2">Online</span>: The sensor initialized without error.
 
-<span style="background-color:#FFC107">Shadow Hardware</span>: The sensor is either intentionally not plugged in or its communications failed. It is running "shadow hardware", which is a mode both useful for debug/development and convenient in that it allows us to run the sensor pipeline without error despite a lack of sensors. For more detail, see the [Sensor Interfaces README](sensor_interfaces/README.md) - suffice to say here that it's expected and normal *unless* you're trying to use a real sensor.
+<span class="highlight">Shadow Hardware</span>: The sensor is either intentionally not plugged in or its communications failed. It is running "shadow hardware", which is a mode both useful for debug/development and convenient in that it allows us to run the sensor pipeline without error despite a lack of sensors. For more detail, see the [Sensor Interfaces README](sensor_interfaces/README.md) - suffice to say here that it's expected and normal *unless* you're trying to use a real sensor.
 
 <span style="background-color:#D55E00">Error</span>: The sensor encountered an error in initialization, check the log files for more information.
 
@@ -119,14 +126,28 @@ The notes and logs panel has text entries for a number of data collection featur
 
 ## Data Management
 
-### Data Savings
+### Data Timestamps
+
+### Data Saving
 Each day the main script is run, it creates two CSV files: by default, these are named "YYYY-MM-DD.csv" and "YYYY-MM-DD_notes.csv". Sensor data gets saved to the first file and user-logged notes get saved to the second.
 
 If you want to take multiple, distinct sets of data each day, the **suffix** of both files can be modified by the *data_saving.yaml* configuration file. The first time the main script is run after changing the suffix, it will create a new data file with the name "YYYY-MM-DDsuffix.csv".
 
 Data is, by default, saved to the "data" directory of this package. You can also use the *data_saving.yaml* configuration file to customize this location.
 
-### Timestamps
+### Data Backup
+
+In the main folder of this repository is the shell script **auto-commit.sh**. This script adds, commits, and pushes everything in this repository to GitHub. On Windows, you can automate this process by adding it to *Task Scheduler*. I've done this for the MGR lab computer - it runs every hour, assuming ceoas_coldex is logged in, and expires on 9/28/2025.
+
+To manually back up to GitHub, you can use GitHub Desktop, use the GitHub command line interface, or trigger the shell script with the following:
+
+    cd Documents\GitHub\MGR-instrumentation
+    start auto-commit.sh
+
+Note that the shell script pushes to the **main branch**.
+
+<img src="doc/imgs/data-backup.png">
+
 
 
 

@@ -42,7 +42,7 @@ Flowmeter:
 Bronkhorst Pressure:
   Time (epoch): []
   Data:
-    Setpoint: []
+    Setpoint (mbar a): []
     Measurement (%): []
     Measurement (mbar a): []
     Temperature (C): []

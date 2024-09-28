@@ -1,6 +1,7 @@
 import serial
 from serial import SerialException
 import time
+import yaml
 
 import logging
 from logdecorator import log_on_start , log_on_end , log_on_error
@@ -43,10 +44,12 @@ class MeltHead:
         except SerialException:
             logger.warning(f"Could not connect to serial port {port}")
     
+    def initialize_pid(self):
+        pass
+    
     def query(self):
         pass
 
-    
     def _calc_header_crc(self):
         crc =   [0x00, 0xfe, 0xff, 0x01, 0xfd, 0x03, 0x02, 0xfc,
                 0xf9, 0x07, 0x06, 0xf8, 0x04, 0xfa, 0xfb, 0x05,
@@ -89,7 +92,7 @@ class MeltHead:
 
         print(~crc[b[6] ^ crc[b[5] ^ crc[b[4] ^ crc[b[3] ^ crc[~b[2]]]]]])
     
-    def send_setpoint(self, setpoint):
+    def send_setpoint(self, setpoint=None):
         preamble = '55 FF' 
         frame_type = '05'
         destination_address = '10' 
@@ -97,20 +100,49 @@ class MeltHead:
         length = '00 0A'
         header_crc = 'EC'
 
+        cmd = bytes.fromhex("55 FF 05 10 00 00 0A EC 01 04 07 01 01 08 42 00 00 00 AB 02") # 0, should be 32
+        self.ser.flush()
+        self.ser.write(cmd)
+
     def start_control_loop(self):
-        if not self.melthead_on:
-            self.ser.write(self.AUTO)
-            self.melthead_on = True
+        # print(self.melthead_on)
+        # if not self.melthead_on:
+        self.ser.write(self.AUTO)
+        self.melthead_on = True
 
     def stop_control_loop(self):
-        if self.melthead_on:
-            self.ser.write(self.OFF)
-            self.melthead_on = False
+        # if self.melthead_on:
+        self.ser.write(self.OFF)
+        self.melthead_on = False
 
 if __name__ == "__main__":
-    mymelt = MeltHead()
-    mymelt._calc_header_crc()
-    
+
+    ## ------- UI INTEFACE FOR TESTING  ------- ##
+    with open("config/sensor_comms.yaml", 'r') as stream:
+        comms_config = yaml.safe_load(stream)
+
+    port = comms_config["Melthead"]["serial port"]
+    baud = comms_config["Melthead"]["baud rate"]
+
+    mymelt = MeltHead(serial_port=port, baudrate=baud)
+    # mymelt._calc_header_crc()
+    print("Testing melthead (EZ-ZONE) serial communication\n")
+    stop = False
+    while not stop:
+        command = input("a: Initialize, b: Start control loop, c: Stop control loop, d: Send setpoint, x: Quit \n")
+        if command == "a" or command == "A":
+            mymelt.initialize_pid()
+        elif command == "b" or command == "B":
+            mymelt.start_control_loop()
+        elif command == "c" or command == "C":
+            mymelt.stop_control_loop()
+        elif command == "d" or command == "D":
+            mymelt.send_setpoint()
+        elif command == "x" or command == "X":
+            stop = True
+        else:
+            print("Invalid entry. Try again")
+
 # cmd = b'\x01\x03\x01\x68\x00\x02\x44\x2B'
 
 # cmd = bytes.fromhex('55 FF 05 10 00 00 06 E8 01 03 01 04 01 01 E3 99')

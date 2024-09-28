@@ -28,6 +28,12 @@ Here is a list of the sensors currently integrated into this framework and a bri
 - Communicates with: Serial (baud rate 38400)
 - Sensor output: depends on the query, returns strings of hex pairs that correspond to both command returns and data
 
+### Melthead (aka Watlow EZ-Zone PID Controller)
+- PID Controller
+- Communicates with: Serial (baud rate 38400)
+- To monitor the PID controller on the device:
+    - Hold down the two grey up/down buttons for ~3 seconds, until the device reads AI, oPEr. You're now in operation mode, parameter Analog Input. Repeatedly press the grey down button until the device reads MON (Monitor mode). Press the blue button with circular arrows to enter this menu. The device will read "1". Press the blue button again to enter the Monitor 1 channel. Now you can cycle through different device information with the blue button. This displays the control loop mode (Off or Auto), the heater percentage (0-100%), the setpoint (deg C), and the current analog reading (Temp, deg C)
+    
 ## Simulated Instruments
 The file `simulated_instruments.py` allows us to use shadow hardware, which is a fancy way of saying it lets us run the main sensor-interpreter-writer pipeline if we're not connected to real sensors. 
 
