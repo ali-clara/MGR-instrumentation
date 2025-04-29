@@ -1,5 +1,24 @@
 # MGR Instrumentation
-Codebase and documentation for unified data collection of the OSU COLDEX Marine and Geologic Reserve lab instrumentation.
+Codebase and documentation for unified data collection of the OSU COLDEX Marine and Geologic Repository instrumentation.
+
+<style>
+    .highlight {
+        color: black;
+        background-color: #FFC107;
+    }
+</style>
+
+## Status Update
+As of 9/30/24
+- I cloned this repository to the lab computer and stress-tested the GUI with real hardware for approximately 1 hour, didn't see any performance degradation.
+- I wasn't able to finish adding the ability to send sensor setpoint commands before leaving the lab. I've since updated those, they work with simulated instruments in the `dev` branch of this repository.
+    - I'd appreciate hopping on a Zoom call to ensure we can pull/merge those changes smoothly! Extra nice if someone can be there who's is familiar with GitHub.
+- This codebase includes support for all sensors discussed in the contract except for the Picarro water isotope analyzer - last I saw that instrument, it was being disassembled and diagnosed by Andy Schauer. Disassembly aside, I wasn't able to get serial communication working for that instrument, and wasn't sure why. It should have been identical to the Picarro gas analyzer
+- The Picarro gas analyzer is **not plugged in** to the lab computer - this was an oversight, I didn't get an appropriate serial cable that would reach before leaving. The Picarro needs a *9-pin null modem* serial cable, I'd reccomend something like [this one](https://www.amazon.com/StarTech-com-10-Feet-RS232-Serial-SCNM9FF/dp/B00006B8BJ/ref=sr_1_5?crid=62VXALQWCT0N&dib=eyJ2IjoiMSJ9.BbnTvXI0wr7mrf1Cowdv4B_audb1ZUq_DCDDe3ZRQoKOZmA3jGZNteFHo82Jrg5UubuNArgf8b9B0iPNl51QcnR1N2IYkKGfA_S86QEvV1KKyskNCVlizIuW2wZOHhm-OkqGXz7K7Cmo_MgMpNS8rym9C7i-GTu9E0xxOaWOjgHl1jm-YzXDB2YfBkQKImOnMi-oqXmOCRh3uRyMLk6MlsOGisDr4p5kRzMaRFRt32o.a841jhqOl5ciOw59JeFzDVSWw8ua8qbry5Pcyy-Ec5U&dib_tag=se&keywords=null+modem+serial+cable&qid=1727473465&sprefix=null+modem+serial+cabl%2Caps%2C181&sr=8-5). 
+    - Once a cable has been aquired, plug it into COM2 on the Picarro and, through a Serial->USB converter, into the lab computer. Check which COM port has been assigned to the instrument (either through Device Manager or the command line), and update this accordingly in `sensor_comms.yaml`
+- The melthead **needs drivers installed**. I didn't have administrator access on the lab computer, so wasn't able to install these. You can download the drivers that support the serial -> usb converter that the melthead uses [here](https://www.advantech.com/en-us/support/details/driver?id=1-HIPU-30). Download the .zip file, extract it, then run the executable under `BBSmartWorx -> Windows -> dpinst.64.exe`. I promise it's legit, I did it on my own personal laptop
+    - Once the drivers are installed, plugging in the Melthead will allow the computer to recognize it as a serial device. Then, as you did (or will do) with the Picarro, check which COM port has been assigned to the instrument (either through Device Manager or the command line), and update this accordingly in `sensor_comms.yaml`
+- While you have administrator access on the lab computer, I'd also reccomend installing the out-of-box software available for all the sensors. I've documented those in the [Sensor Interfaces README](sensor_interfaces/README.md).
 
 ## Overview
 
@@ -87,13 +106,13 @@ The GUI is divided into three main panels.
 
 This panel has general buttons for sensor initialization/shutdown and data collection start/stop. For the sensors that have control capability, sensor-specific buttons exist as well.
 
-Each sensor has a status indicator that updates after initialization and shutdown. The status options are <span style="background-color:#AF5189">offline</span>, <span style="background-color:#619CD2">online</span>, <span style="background-color:#FFC107">shadow hardware</span>, and <span style="background-color:#D55E00">error</span>.
+Each sensor has a status indicator that updates after initialization and shutdown. The status options are <span style="background-color:#AF5189">offline</span>, <span style="background-color:#619CD2">online</span>, <span class="highlight">shadow hardware</span>, and <span style="background-color:#D55E00">error</span>.
 
 <span style="background-color:#AF5189">Offline</span>: The sensor is either shut down or not initialized.
 
 <span style="background-color:#619CD2">Online</span>: The sensor initialized without error.
 
-<span style="background-color:#FFC107">Shadow Hardware</span>: The sensor is either intentionally not plugged in or its communications failed. It is running "shadow hardware", which is a mode both useful for debug/development and convenient in that it allows us to run the sensor pipeline without error despite a lack of sensors. For more detail, see the [Sensor Interfaces README](sensor_interfaces/README.md) - suffice to say here that it's expected and normal *unless* you're trying to use a real sensor.
+<span class="highlight">Shadow Hardware</span>: The sensor is either intentionally not plugged in or its communications failed. It is running "shadow hardware", which is a mode both useful for debug/development and convenient in that it allows us to run the sensor pipeline without error despite a lack of sensors. For more detail, see the [Sensor Interfaces README](sensor_interfaces/README.md) - suffice to say here that it's expected and normal *unless* you're trying to use a real sensor.
 
 <span style="background-color:#D55E00">Error</span>: The sensor encountered an error in initialization, check the log files for more information.
 
@@ -119,14 +138,28 @@ The notes and logs panel has text entries for a number of data collection featur
 
 ## Data Management
 
-### Data Savings
+### Data Timestamps
+
+### Data Saving
 Each day the main script is run, it creates two CSV files: by default, these are named "YYYY-MM-DD.csv" and "YYYY-MM-DD_notes.csv". Sensor data gets saved to the first file and user-logged notes get saved to the second.
 
 If you want to take multiple, distinct sets of data each day, the **suffix** of both files can be modified by the *data_saving.yaml* configuration file. The first time the main script is run after changing the suffix, it will create a new data file with the name "YYYY-MM-DDsuffix.csv".
 
 Data is, by default, saved to the "data" directory of this package. You can also use the *data_saving.yaml* configuration file to customize this location.
 
-### Timestamps
+### Data Backup
+
+In the main folder of this repository is the shell script **auto-commit.sh**. This script adds, commits, and pushes everything in this repository to GitHub. On Windows, you can automate this process by adding it to *Task Scheduler*. I've done this for the MGR lab computer - it runs every hour, assuming ceoas_coldex is logged in, and expires on 9/28/2025.
+
+To manually back up to GitHub, you can use GitHub Desktop, use the GitHub command line interface, or trigger the shell script with the following:
+
+    cd Documents\GitHub\MGR-instrumentation
+    start auto-commit.sh
+
+Note that the shell script pushes to the **main branch**.
+
+<img src="doc/imgs/data-backup.png">
+
 
 
 

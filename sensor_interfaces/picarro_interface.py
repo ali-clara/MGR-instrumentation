@@ -19,8 +19,8 @@ logger = logging.getLogger(__name__)
 # Set the lowest-severity log message the logger will handle (debug = lowest, critical = highest)
 logger.setLevel(logging.DEBUG)
 # Create a handler that saves logs to the log folder named as the current date
-# fh = logging.FileHandler(f"logs\\{time.strftime('%Y-%m-%d', time.localtime())}.log")
-fh = logging.StreamHandler()
+fh = logging.FileHandler(f"logs\\{time.strftime('%Y-%m-%d', time.localtime())}.log")
+# fh = logging.StreamHandler()
 fh.setLevel(logging.DEBUG)
 logger.addHandler(fh)
 # Create a formatter to specify our log format
@@ -93,7 +93,7 @@ class Picarro():
         buf = b''
         char = b''
         timeout = 0
-        while char != b'\r' and timeout <= 70:
+        while char != b'\r' and timeout <= 10: #changed from 70
             char = self.ser.read(1)
             buf = buf + char
             timeout += 1
@@ -137,12 +137,12 @@ class Picarro():
     
 
 if __name__ == "__main__":
-    my_picarro = Picarro(serial_port="COM3", baud_rate=19200)
+    my_picarro = Picarro(serial_port="COM7", baud_rate=9600)
     # order of the gas measurements returned by query()
     #   I had to manually watch the picarro and the serial output to determine this order, not sure where it's specified
     gasses = ["CO2", "CH4", "CO", "H2O"]
 
-    isotopes = []
+    isotopes = ["H20", "Delta_18", "Delta_D"]
 
     ## ------- UNIT TESTING  ------- ##
     stop = False

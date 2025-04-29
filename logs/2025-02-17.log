@@ -1,0 +1,609 @@
+INFO: 10:26:28 - main_pipeline.sensor:  Couldn't find Picarro at port COM9, shadowing sensor calls with substitute functions
+INFO: 10:26:28 - main_pipeline.sensor:  Successfully connected to port COM4, using real Abakus hardware
+INFO: 10:26:28 - main_pipeline.sensor:  Successfully connected to port COM3 and COM5, using real Flowmeter hardware
+INFO: 10:26:28 - main_pipeline.sensor:  Successfully connected to port COM6, using real Dimetix hardware
+INFO: 10:26:28 - main_pipeline.sensor:  Successfully connected to port COM7, using real Bronkhorst hardware
+INFO: 10:28:59 - main_pipeline.sensor:  Couldn't find Picarro at port COM9, shadowing sensor calls with substitute functions
+INFO: 10:28:59 - main_pipeline.sensor:  Successfully connected to port COM4, using real Abakus hardware
+INFO: 10:29:00 - main_pipeline.sensor:  Successfully connected to port COM3 and COM5, using real Flowmeter hardware
+INFO: 10:29:00 - main_pipeline.sensor:  Successfully connected to port COM6, using real Dimetix hardware
+INFO: 10:29:00 - main_pipeline.sensor:  Successfully connected to port COM7, using real Bronkhorst hardware
+INFO: 10:29:00 - main_pipeline.sensor:  Successfully connected to port COM7, using real Melthead hardware
+INFO: 10:29:00 - sensor_interfaces.abakus_interface:  Connected to serial port COM4 with baud 38400
+INFO: 10:29:00 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM3 with baud 115200
+INFO: 10:29:00 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM5 with baud 115200
+INFO: 10:29:00 - sensor_interfaces.laser_interface:  Connected to serial port COM6 with baud 19200
+INFO: 10:29:00 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM9 with baud 19200
+INFO: 10:29:00 - sensor_interfaces.bronkhorst_interface:  Connected to serial port COM7 with baud 38400
+INFO: 10:29:01 - main_pipeline.sensor:  Shutting down sensors
+INFO: 10:29:01 - sensor_interfaces.abakus_interface:  Abakus measurements stopped
+INFO: 10:29:01 - sensor_interfaces.abakus_interface:  Abakus measurements stopped
+INFO: 10:29:01 - sensor_interfaces.laser_interface:  Dimetix laser turned off
+INFO: 10:31:41 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 10:33:10 - __main__:  Set setpoint to 0.0 degC
+INFO: 10:33:24 - __main__:  Initializing Melthead
+INFO: 10:33:28 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 10:33:46 - __main__:  Set setpoint to 0.0 degC
+INFO: 10:34:28 - main_pipeline.sensor:  Couldn't find Picarro at port COM9, shadowing sensor calls with substitute functions
+INFO: 10:34:28 - main_pipeline.sensor:  Successfully connected to port COM4, using real Abakus hardware
+INFO: 10:34:28 - main_pipeline.sensor:  Successfully connected to port COM3 and COM5, using real Flowmeter hardware
+INFO: 10:34:28 - main_pipeline.sensor:  Successfully connected to port COM6, using real Dimetix hardware
+INFO: 10:34:29 - main_pipeline.sensor:  Successfully connected to port COM7, using real Bronkhorst hardware
+INFO: 10:34:29 - main_pipeline.sensor:  Successfully connected to port COM7, using real Melthead hardware
+INFO: 10:34:29 - sensor_interfaces.abakus_interface:  Connected to serial port COM4 with baud 38400
+INFO: 10:34:29 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM3 with baud 115200
+INFO: 10:34:29 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM5 with baud 115200
+INFO: 10:34:29 - sensor_interfaces.laser_interface:  Connected to serial port COM6 with baud 19200
+INFO: 10:34:29 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM9 with baud 19200
+INFO: 10:34:29 - sensor_interfaces.bronkhorst_interface:  Connected to serial port COM7 with baud 38400
+WARNING: 10:34:29 - sensor_interfaces.melthead_interface:  Could not connect to serial port COM7
+INFO: 10:34:29 - main_pipeline.sensor:  Sensor class initiated
+INFO: 10:34:29 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 10:34:29 - main_pipeline.writer:  Display class initiated
+INFO: 10:34:29 - __main__:  No control inputs for the Picarro Gas
+INFO: 10:34:29 - __main__:  No control inputs for the Laser Distance Sensor
+INFO: 10:34:29 - __main__:  No control inputs for the Abakus Particle Counter
+INFO: 10:34:29 - __main__:  No control inputs for the Flowmeter
+INFO: 10:35:25 - main_pipeline.sensor:  Initializing sensors
+INFO: 10:35:25 - sensor_interfaces.abakus_interface:  Initializing Abakus
+INFO: 10:35:25 - sensor_interfaces.abakus_interface:  Abakus measurements started
+INFO: 10:35:25 - sensor_interfaces.abakus_interface:  Initialization attempt 1/10
+INFO: 10:35:26 - sensor_interfaces.abakus_interface:  Initialization attempt 2/10
+INFO: 10:35:26 - sensor_interfaces.abakus_interface:  Initialization attempt 3/10
+INFO: 10:35:26 - sensor_interfaces.abakus_interface:  Abakus initialized
+INFO: 10:35:26 - sensor_interfaces.sim_instruments:  Initializing Picarro
+INFO: 10:35:26 - sensor_interfaces.sim_instruments:  Initialized Picarro
+INFO: 10:35:26 - sensor_interfaces.laser_interface:  Dimetix laser turned on
+INFO: 10:35:26 - sensor_interfaces.laser_interface:  Laser distance initialization attempt 1/10
+INFO: 10:35:26 - sensor_interfaces.laser_interface:  Laser distance initialized
+INFO: 10:35:26 - sensor_interfaces.laser_interface:  Laser temperature initialization attempt 1/10
+INFO: 10:35:26 - sensor_interfaces.laser_interface:  Laser temperature initialized
+INFO: 10:35:26 - sensor_interfaces.bronkhorst_interface:  Initialization attempt 1/10
+INFO: 10:35:26 - sensor_interfaces.bronkhorst_interface:  Bronkhorst initialized
+INFO: 10:35:26 - sensor_interfaces.melthead_interface:  Initializing Melthead
+INFO: 10:36:43 - main_pipeline.sensor:  Couldn't find Picarro at port COM9, shadowing sensor calls with substitute functions
+INFO: 10:36:43 - main_pipeline.sensor:  Successfully connected to port COM4, using real Abakus hardware
+INFO: 10:36:44 - main_pipeline.sensor:  Successfully connected to port COM3 and COM5, using real Flowmeter hardware
+INFO: 10:36:44 - main_pipeline.sensor:  Successfully connected to port COM6, using real Dimetix hardware
+INFO: 10:36:44 - main_pipeline.sensor:  Successfully connected to port COM7, using real Bronkhorst hardware
+WARNING: 10:36:44 - main_pipeline.sensor:  Couldn't find Melthead at port COM9, shadowing sensor calls with substitute functions
+INFO: 10:36:44 - sensor_interfaces.abakus_interface:  Connected to serial port COM4 with baud 38400
+INFO: 10:36:44 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM3 with baud 115200
+INFO: 10:36:44 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM5 with baud 115200
+INFO: 10:36:44 - sensor_interfaces.laser_interface:  Connected to serial port COM6 with baud 19200
+INFO: 10:36:44 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM9 with baud 19200
+INFO: 10:36:44 - sensor_interfaces.bronkhorst_interface:  Connected to serial port COM7 with baud 38400
+INFO: 10:36:44 - main_pipeline.sensor:  Sensor class initiated
+INFO: 10:36:44 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 10:36:44 - main_pipeline.writer:  Display class initiated
+INFO: 10:36:44 - __main__:  No control inputs for the Picarro Gas
+INFO: 10:36:44 - __main__:  No control inputs for the Laser Distance Sensor
+INFO: 10:36:44 - __main__:  No control inputs for the Abakus Particle Counter
+INFO: 10:36:44 - __main__:  No control inputs for the Flowmeter
+INFO: 10:36:47 - main_pipeline.sensor:  Initializing sensors
+INFO: 10:36:47 - sensor_interfaces.abakus_interface:  Initializing Abakus
+INFO: 10:36:47 - sensor_interfaces.abakus_interface:  Abakus measurements started
+INFO: 10:36:47 - sensor_interfaces.abakus_interface:  Initialization attempt 1/10
+INFO: 10:36:47 - sensor_interfaces.abakus_interface:  Abakus initialized
+INFO: 10:36:47 - sensor_interfaces.sim_instruments:  Initializing Picarro
+INFO: 10:36:47 - sensor_interfaces.sim_instruments:  Initialized Picarro
+INFO: 10:36:47 - sensor_interfaces.laser_interface:  Dimetix laser turned on
+INFO: 10:36:47 - sensor_interfaces.laser_interface:  Laser distance initialization attempt 1/10
+INFO: 10:36:47 - sensor_interfaces.laser_interface:  Laser distance initialized
+INFO: 10:36:47 - sensor_interfaces.laser_interface:  Laser temperature initialization attempt 1/10
+INFO: 10:36:47 - sensor_interfaces.laser_interface:  Laser temperature initialized
+INFO: 10:36:47 - sensor_interfaces.bronkhorst_interface:  Initialization attempt 1/10
+INFO: 10:36:47 - sensor_interfaces.bronkhorst_interface:  Bronkhorst initialized
+INFO: 10:36:47 - sensor_interfaces.sim_instruments:  Initializing Melthead
+INFO: 10:36:47 - sensor_interfaces.sim_instruments:  Melthead initialized
+INFO: 10:36:47 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 10:36:47 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 10:36:51 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 10:36:51 - sensor_interfaces.flowmeter_interface:  Flowmeter sli2000 initialized
+INFO: 10:36:51 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 10:36:51 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 10:36:54 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 10:36:54 - sensor_interfaces.flowmeter_interface:  Flowmeter sls1500 initialized
+INFO: 10:36:54 - main_pipeline.sensor:  Finished initializing sensors
+WARNING: 10:37:05 - main_pipeline.interpreter:  Error in extracting time and data from Abakus reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 10:37:05 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLI2000 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 10:37:05 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLS1500 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 10:37:05 - main_pipeline.interpreter:  Error in extracting time and data from laser reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 10:37:05 - __main__:  Error updating the Picarro Gas buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Laser Distance Sensor buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Abakus Particle Counter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Abakus Particle Counter buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Flowmeter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Bronkhorst Pressure buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Melthead buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 10:37:05 - __main__:  Error updating the Melthead buffer data: 'NoneType' object is not subscriptable
+INFO: 10:37:12 - main_pipeline.sensor:  Shutting down sensors
+INFO: 10:37:12 - sensor_interfaces.abakus_interface:  Abakus measurements stopped
+INFO: 10:37:12 - sensor_interfaces.laser_interface:  Dimetix laser turned off
+INFO: 10:37:12 - main_pipeline.sensor:  Finished shutting down sensors
+INFO: 10:37:18 - main_pipeline.sensor:  Shutting down sensors
+INFO: 10:37:18 - sensor_interfaces.abakus_interface:  Abakus measurements stopped
+INFO: 10:37:18 - sensor_interfaces.laser_interface:  Dimetix laser turned off
+INFO: 10:37:18 - main_pipeline.sensor:  Finished shutting down sensors
+INFO: 10:42:47 - __main__:  Connected to serial port COM8 with baud 19200
+INFO: 10:42:51 - __main__:  read 66 bytes
+INFO: 10:42:51 - __main__:  Picarro queried
+INFO: 10:43:02 - __main__:  read 66 bytes
+INFO: 10:43:02 - __main__:  Picarro queried
+INFO: 10:43:50 - main_pipeline.sensor:  Successfully connected to port COM8, using real Picarro Gas hardware
+INFO: 10:43:50 - main_pipeline.sensor:  Successfully connected to port COM4, using real Abakus hardware
+INFO: 10:43:50 - main_pipeline.sensor:  Successfully connected to port COM3 and COM5, using real Flowmeter hardware
+INFO: 10:43:50 - main_pipeline.sensor:  Successfully connected to port COM6, using real Dimetix hardware
+INFO: 10:43:50 - main_pipeline.sensor:  Successfully connected to port COM7, using real Bronkhorst hardware
+WARNING: 10:43:50 - main_pipeline.sensor:  Couldn't find Melthead at port COM9, shadowing sensor calls with substitute functions
+INFO: 10:43:50 - sensor_interfaces.abakus_interface:  Connected to serial port COM4 with baud 38400
+INFO: 10:43:50 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM3 with baud 115200
+INFO: 10:43:50 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM5 with baud 115200
+INFO: 10:43:50 - sensor_interfaces.laser_interface:  Connected to serial port COM6 with baud 19200
+INFO: 10:43:51 - sensor_interfaces.picarro_interface:  Connected to serial port COM8 with baud 19200
+INFO: 10:43:51 - sensor_interfaces.bronkhorst_interface:  Connected to serial port COM7 with baud 38400
+INFO: 10:43:51 - main_pipeline.sensor:  Sensor class initiated
+INFO: 10:43:51 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 10:43:51 - main_pipeline.writer:  Display class initiated
+INFO: 10:43:51 - __main__:  No control inputs for the Picarro Gas
+INFO: 10:43:51 - __main__:  No control inputs for the Laser Distance Sensor
+INFO: 10:43:51 - __main__:  No control inputs for the Abakus Particle Counter
+INFO: 10:43:51 - __main__:  No control inputs for the Flowmeter
+INFO: 10:43:57 - main_pipeline.sensor:  Initializing sensors
+INFO: 10:43:57 - sensor_interfaces.abakus_interface:  Initializing Abakus
+INFO: 10:43:57 - sensor_interfaces.abakus_interface:  Abakus measurements started
+INFO: 10:43:57 - sensor_interfaces.abakus_interface:  Initialization attempt 1/10
+INFO: 10:43:57 - sensor_interfaces.abakus_interface:  Initialization attempt 2/10
+INFO: 10:43:57 - sensor_interfaces.abakus_interface:  Initialization attempt 3/10
+INFO: 10:43:57 - sensor_interfaces.abakus_interface:  Abakus initialized
+INFO: 10:43:57 - sensor_interfaces.picarro_interface:  Initialization attempt 1/10
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  read 66 bytes
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Initialization attempt 2/10
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  read 66 bytes
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Initialization attempt 3/10
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  read 66 bytes
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Initialization attempt 4/10
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  read 66 bytes
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Initialization attempt 5/10
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  read 66 bytes
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Initialization attempt 6/10
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  read 66 bytes
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 10:43:58 - sensor_interfaces.picarro_interface:  Initialization attempt 7/10
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  read 66 bytes
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  Initialization attempt 8/10
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  read 66 bytes
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  Initialization attempt 9/10
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  read 66 bytes
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  Initialization attempt 10/10
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  read 66 bytes
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 10:43:59 - sensor_interfaces.picarro_interface:  Picarro initialization failed after 10 attempts
+INFO: 10:43:59 - sensor_interfaces.laser_interface:  Dimetix laser turned on
+INFO: 10:43:59 - sensor_interfaces.laser_interface:  Laser distance initialization attempt 1/10
+INFO: 10:43:59 - sensor_interfaces.laser_interface:  Laser distance initialized
+INFO: 10:43:59 - sensor_interfaces.laser_interface:  Laser temperature initialization attempt 1/10
+INFO: 10:43:59 - sensor_interfaces.laser_interface:  Laser temperature initialized
+INFO: 10:43:59 - sensor_interfaces.bronkhorst_interface:  Initialization attempt 1/10
+INFO: 10:43:59 - sensor_interfaces.bronkhorst_interface:  Bronkhorst initialized
+INFO: 10:43:59 - sensor_interfaces.sim_instruments:  Initializing Melthead
+INFO: 10:43:59 - sensor_interfaces.sim_instruments:  Melthead initialized
+INFO: 10:43:59 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 10:43:59 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 10:44:03 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 10:44:03 - sensor_interfaces.flowmeter_interface:  Flowmeter sli2000 initialized
+INFO: 10:44:03 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 10:44:03 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 10:44:07 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 10:44:07 - sensor_interfaces.flowmeter_interface:  Flowmeter sls1500 initialized
+INFO: 10:44:07 - main_pipeline.sensor:  Finished initializing sensors
+INFO: 10:44:36 - main_pipeline.sensor:  Shutting down sensors
+INFO: 10:44:36 - sensor_interfaces.abakus_interface:  Abakus measurements stopped
+INFO: 10:44:36 - sensor_interfaces.laser_interface:  Dimetix laser turned off
+INFO: 10:44:36 - main_pipeline.sensor:  Finished shutting down sensors
+INFO: 10:44:52 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 10:44:57 - __main__:  Initialization attempt 1/10
+INFO: 10:44:57 - __main__:  Bronkhorst initialized
+INFO: 10:46:34 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 10:46:40 - __main__:  Initialization attempt 1/10
+INFO: 10:46:40 - __main__:  Bronkhorst initialized
+INFO: 10:46:53 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 10:46:57 - __main__:  Initialization attempt 1/10
+INFO: 10:46:57 - __main__:  Bronkhorst initialized
+INFO: 10:47:45 - __main__:  Initialization attempt 1/10
+INFO: 10:47:45 - __main__:  Bronkhorst initialized
+INFO: 10:51:23 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 10:51:26 - __main__:  Initialization attempt 1/10
+INFO: 10:51:26 - __main__:  Bronkhorst initialized
+INFO: 10:52:20 - __main__:  Initialization attempt 1/10
+INFO: 10:52:20 - __main__:  Bronkhorst initialized
+INFO: 10:53:13 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 10:53:16 - __main__:  Initialization attempt 1/10
+INFO: 10:53:16 - __main__:  Bronkhorst initialized
+INFO: 10:53:38 - __main__:  Initialization attempt 1/10
+INFO: 10:53:38 - __main__:  Bronkhorst initialized
+INFO: 10:55:52 - __main__:  Connected to serial port COM7 with baud 38400
+INFO: 10:56:22 - __main__:  Initialization attempt 1/10
+INFO: 10:56:22 - __main__:  Bronkhorst initialized
+INFO: 10:57:02 - __main__:  Invalid bronkhorst setpoint: 75-. could not convert string to float: '75-'
+INFO: 12:22:03 - main_pipeline.sensor:  Successfully connected to port COM8, using real Picarro Gas hardware
+INFO: 12:22:03 - main_pipeline.sensor:  Successfully connected to port COM4, using real Abakus hardware
+INFO: 12:22:03 - main_pipeline.sensor:  Successfully connected to port COM3 and COM5, using real Flowmeter hardware
+INFO: 12:22:03 - main_pipeline.sensor:  Successfully connected to port COM6, using real Dimetix hardware
+INFO: 12:22:03 - main_pipeline.sensor:  Successfully connected to port COM7, using real Bronkhorst hardware
+WARNING: 12:22:03 - main_pipeline.sensor:  Couldn't find Melthead at port COM9, shadowing sensor calls with substitute functions
+INFO: 12:22:04 - sensor_interfaces.abakus_interface:  Connected to serial port COM4 with baud 38400
+INFO: 12:22:04 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM3 with baud 115200
+INFO: 12:22:04 - sensor_interfaces.flowmeter_interface:  Connected to serial port COM5 with baud 115200
+INFO: 12:22:04 - sensor_interfaces.laser_interface:  Connected to serial port COM6 with baud 19200
+INFO: 12:22:04 - sensor_interfaces.picarro_interface:  Connected to serial port COM8 with baud 19200
+INFO: 12:22:04 - sensor_interfaces.bronkhorst_interface:  Connected to serial port COM7 with baud 38400
+INFO: 12:22:04 - main_pipeline.sensor:  Sensor class initiated
+INFO: 12:22:04 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 12:22:04 - main_pipeline.writer:  Display class initiated
+INFO: 12:22:04 - __main__:  No control inputs for the Picarro Gas
+INFO: 12:22:04 - __main__:  No control inputs for the Laser Distance Sensor
+INFO: 12:22:04 - __main__:  No control inputs for the Abakus Particle Counter
+INFO: 12:22:04 - __main__:  No control inputs for the Flowmeter
+INFO: 12:22:12 - main_pipeline.sensor:  Initializing sensors
+INFO: 12:22:12 - sensor_interfaces.abakus_interface:  Initializing Abakus
+INFO: 12:22:12 - sensor_interfaces.abakus_interface:  Abakus measurements started
+INFO: 12:22:12 - sensor_interfaces.abakus_interface:  Initialization attempt 1/10
+INFO: 12:22:13 - sensor_interfaces.abakus_interface:  Initialization attempt 2/10
+INFO: 12:22:13 - sensor_interfaces.abakus_interface:  Initialization attempt 3/10
+INFO: 12:22:13 - sensor_interfaces.abakus_interface:  Abakus initialized
+INFO: 12:22:13 - sensor_interfaces.picarro_interface:  Initialization attempt 1/10
+INFO: 12:22:13 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:13 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:13 - sensor_interfaces.picarro_interface:  Picarro initialized
+INFO: 12:22:13 - sensor_interfaces.laser_interface:  Dimetix laser turned on
+INFO: 12:22:13 - sensor_interfaces.laser_interface:  Laser distance initialization attempt 1/10
+INFO: 12:22:13 - sensor_interfaces.laser_interface:  Laser distance initialized
+INFO: 12:22:13 - sensor_interfaces.laser_interface:  Laser temperature initialization attempt 1/10
+INFO: 12:22:13 - sensor_interfaces.laser_interface:  Laser temperature initialized
+INFO: 12:22:13 - sensor_interfaces.bronkhorst_interface:  Initialization attempt 1/10
+INFO: 12:22:13 - sensor_interfaces.bronkhorst_interface:  Bronkhorst initialized
+INFO: 12:22:13 - sensor_interfaces.sim_instruments:  Initializing Melthead
+INFO: 12:22:13 - sensor_interfaces.sim_instruments:  Melthead initialized
+INFO: 12:22:13 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 12:22:13 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 12:22:17 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 12:22:17 - sensor_interfaces.flowmeter_interface:  Flowmeter sli2000 initialized
+INFO: 12:22:17 - sensor_interfaces.flowmeter_interface:  Flowmeter measurements started
+INFO: 12:22:17 - sensor_interfaces.flowmeter_interface:  Initialization attempt 1/10
+INFO: 12:22:20 - sensor_interfaces.flowmeter_interface:  Initialization attempt 2/10
+INFO: 12:22:20 - sensor_interfaces.flowmeter_interface:  Flowmeter sls1500 initialized
+INFO: 12:22:20 - main_pipeline.sensor:  Finished initializing sensors
+WARNING: 12:22:28 - main_pipeline.interpreter:  Error in extracting time and data from Abakus reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:22:28 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLI2000 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:22:28 - main_pipeline.interpreter:  Error in extracting time and data from flowmeter SLS1500 reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:22:28 - main_pipeline.interpreter:  Error in extracting time and data from laser reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+WARNING: 12:22:28 - main_pipeline.interpreter:  Error in extracting time and data from picarro reading: cannot unpack non-iterable NoneType object. Probably not a tuple. Not updating measurement
+INFO: 12:22:29 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:29 - sensor_interfaces.picarro_interface:  Picarro queried
+WARNING: 12:22:29 - __main__:  Error updating the Picarro Gas buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Laser Distance Sensor buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Abakus Particle Counter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Abakus Particle Counter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Flowmeter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Bronkhorst Pressure buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Melthead buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 12:22:29 - __main__:  Error updating the Melthead buffer data: 'NoneType' object is not subscriptable
+INFO: 12:22:30 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:30 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:31 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:31 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:32 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:32 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:33 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:33 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:34 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:34 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:35 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:35 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:36 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:36 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:37 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:37 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:38 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:38 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:39 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:39 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:40 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:40 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:41 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:41 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:42 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:42 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:43 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:43 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:44 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:44 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:45 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:45 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:46 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:46 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:47 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:47 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:48 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:48 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:49 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:49 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:50 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:50 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:51 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:51 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:52 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:52 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:53 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:53 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:54 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:54 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:55 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:55 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:56 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:56 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:57 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:57 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:58 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:58 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:22:59 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:22:59 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:00 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:00 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:01 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:01 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:02 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:02 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:03 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:03 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:04 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:04 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:05 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:05 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:06 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:06 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:07 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:07 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:08 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:08 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:09 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:09 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:10 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:10 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:11 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:11 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:12 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:12 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:13 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:13 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:14 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:14 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:15 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:15 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:16 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:16 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:17 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:17 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:18 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:18 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:19 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:19 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:20 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:20 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:21 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:21 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:22 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:22 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:23 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:23 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:24 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:24 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:25 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:25 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:26 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:26 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:27 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:27 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:28 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:28 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:29 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:29 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:30 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:30 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:31 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:31 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:32 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:32 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:33 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:33 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:34 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:34 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:35 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:35 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:36 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:36 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:37 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:37 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:38 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:38 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:39 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:39 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:40 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:40 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:41 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:41 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:42 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:42 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:43 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:43 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:44 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:44 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:45 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:45 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:46 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:46 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:47 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:47 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:48 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:48 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:49 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:49 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:50 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:50 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:51 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:51 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:52 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:52 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:53 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:53 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:54 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:54 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:55 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:55 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:56 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:56 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:57 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:57 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:58 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:58 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:23:59 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:23:59 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:00 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:00 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:01 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:01 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:02 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:02 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:03 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:03 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:04 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:04 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:05 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:05 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:06 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:06 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:07 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:07 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:08 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:08 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:09 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:09 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:10 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:10 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:11 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:11 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:12 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:12 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:13 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:13 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:14 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:14 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:15 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:15 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:16 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:16 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:17 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:17 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:18 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:18 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:19 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:19 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:20 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:20 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:21 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:21 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:22 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:22 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:23 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:23 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:24 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:24 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:25 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:25 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:26 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:26 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:27 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:27 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:28 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:28 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:29 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:29 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:30 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:30 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:31 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:31 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:32 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:32 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:33 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:33 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:34 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:34 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:35 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:35 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:36 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:36 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:24:37 - sensor_interfaces.picarro_interface:  read 51 bytes
+INFO: 12:24:37 - sensor_interfaces.picarro_interface:  Picarro queried
+INFO: 12:28:19 - main_pipeline.sensor:  Shutting down sensors
+INFO: 12:28:19 - sensor_interfaces.abakus_interface:  Abakus measurements stopped
+INFO: 12:28:19 - sensor_interfaces.laser_interface:  Dimetix laser turned off
+INFO: 12:28:19 - main_pipeline.sensor:  Finished shutting down sensors
+INFO: 12:30:53 - __main__:  Connected to serial port COM7 with baud 19200
+INFO: 12:31:34 - __main__:  read 71 bytes
+INFO: 12:31:34 - __main__:  Picarro queried
+INFO: 12:34:36 - __main__:  read 71 bytes
+INFO: 12:34:36 - __main__:  Picarro queried
+INFO: 12:36:15 - __main__:  Connected to serial port COM7 with baud 19200
+INFO: 12:36:57 - __main__:  read 71 bytes
+INFO: 12:36:57 - __main__:  Picarro queried
+INFO: 12:37:43 - __main__:  Connected to serial port COM8 with baud 19200
+INFO: 12:37:49 - __main__:  read 51 bytes
+INFO: 12:37:49 - __main__:  Picarro queried
+INFO: 12:39:44 - __main__:  Connected to serial port COM7 with baud 19200
+INFO: 12:40:23 - __main__:  read 71 bytes
+INFO: 12:40:23 - __main__:  Picarro queried
+INFO: 12:43:27 - __main__:  Connected to serial port COM7 with baud 19200
+INFO: 12:44:06 - __main__:  read 71 bytes
+INFO: 12:44:06 - __main__:  Picarro queried
+INFO: 12:44:37 - __main__:  Connected to serial port COM8 with baud 19200
+INFO: 12:44:45 - __main__:  read 51 bytes
+INFO: 12:44:45 - __main__:  Picarro queried
+INFO: 13:32:42 - __main__:  Connected to serial port COM7 with baud 19200
+INFO: 13:33:21 - __main__:  read 71 bytes
+INFO: 13:33:21 - __main__:  Picarro queried
+INFO: 13:33:27 - __main__:  Connected to serial port COM7 with baud 9600
+INFO: 13:33:36 - __main__:  read 11 bytes
+INFO: 13:33:36 - __main__:  Picarro queried

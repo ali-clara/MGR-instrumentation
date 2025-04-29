@@ -12,6 +12,16 @@ try:
 except ImportError:
     from bus import Bus
 
+try:
+    import ieee754_conversions
+except ImportError:
+    import pathlib
+    import sys
+    _parentdir = pathlib.Path(__file__).parent.parent.resolve()
+    sys.path.insert(0, str(_parentdir))
+    import ieee754_conversions
+    sys.path.remove(str(_parentdir))
+
 import logging
 from logdecorator import log_on_start , log_on_end , log_on_error
 
@@ -58,7 +68,6 @@ class Interpreter():
                 self.big_data[name]["Data"][channel] = np.nan
                 self.channels.append(f"{name} {channel}")
 
-    
     def main_consumer_producer(self, abakus_bus:Bus, flowmeter_sli_bus:Bus, flowmeter_sls_bus:Bus, laser_bus:Bus,
                                picarro_gas_bus:Bus, bronkhorst_bus:Bus, output_bus:Bus):
         """Method to read from all the sensor busses, process the data it reads, and write one compiled output file. 
@@ -106,7 +115,6 @@ class Interpreter():
             channels = list(self.big_data[name]["Data"].keys())
             for channel in channels:
                 self.big_data[name]["Data"][channel] = np.nan
-
 
     ## ------------------- ABAKUS PARTICLE COUNTER ------------------- ##
     def process_abakus_data(self, abakus_data):
@@ -246,7 +254,7 @@ class Interpreter():
             if chkRx != chk:
                 raise Exception("Bad checksum")
         except Exception as e:
-            logger.warning(f"Encountered exception in validating flowmeter {model}: {e}. Not updating measurement.")
+            logger.warning(f"Encountered exception in validating flowmeter {model}: {e}. Raw output {raw_data}")
             return False
         else:
             # If we passed those checks, compile valid output
@@ -258,7 +266,6 @@ class Interpreter():
                     i = i + 2  # +2 for pairs of bytes
 
             return adr, cmd, state, length, rxdata16, chkRx
-
     
     def bytepack(self, byte1, byte2):
         """Helper method to concatenate two uint8 bytes to uint16. Takes two's complement if negative
@@ -386,7 +393,22 @@ class Interpreter():
                 timestamp, data_out = picarro_data
             except Exception as e:
                 logger.warning(f"Encountered exception in processing picarro {model}: {e}. Not updating measurement.")
-
+            else:
+                if data_out == "nan":
+                    self.big_data["Picarro Water"]["Time (epoch)"] = timestamp
+                    return
+                try:
+                    # data_out[0] # the time at which the measurement was sampled, probably different than timestamp because
+                    # the computer clocks drift
+                    self.big_data["Picarro Water"]["Time (epoch)"] = timestamp
+                    self.big_data["Picarro Water"]["Data"]["H2O (ppm)"] = float(data_out[1])
+                    self.big_data["Picarro Water"]["Data"]["Delta_18_16 (%o)"] = float(data_out[2])
+                    self.big_data["Picarro Water"]["Data"]["Delta_D_H (%o)"] = float(data_out[3])
+                except KeyError as e:
+                    logger.warning(f"Encountered exception in processing picarro {model}: No key {e}. Not updating measurement.")
+                except Exception as e:
+                    logger.warning(f"Unexpected exception in processing picarro {model} data: {e}. Not updating measurement")
+                
     ## ------------------- BRONKHORST PRESSURE SENSOR ------------------- ##
     def process_bronkhorst_data(self, bronkhorst_data):
         """Method to process Bronkhorst output when querying setpoint/measurement and fmeasure/temperature
@@ -397,31 +419,31 @@ class Interpreter():
 
         # Try to split up the data into the readings we expect
         try:
-            timestamp, (setpoint_and_meas, fmeas_and_temp) = bronkhorst_data
+            timestamp, data_out = bronkhorst_data
         # If that didn't work, log it
-        except KeyError as e:
+        except TypeError as e:
             logger.warning(f"Error in extracting time and data from bronkhorst reading: {e}. Probably not a tuple. Not updating measurement")
         # If it did work, parse the data
         else:
-            if setpoint_and_meas == "nan":
+            if data_out == "nan":
                 self.big_data["Bronkhorst Pressure"]["Time (epoch)"] = timestamp
                 return
             try:
-                # Parsing setpoint and measurement is straightforward - 
+                (fsetpoint, meas, fmeas_and_temp) = data_out
+                # Parsing measurement is straightforward - 
                 # First, slice the setpoint and measurement out of the chained response and convert the hex string to an integer
-                setpoint = int(setpoint_and_meas[11:15], 16)
-                measure = int(setpoint_and_meas[19:], 16)
+                measure = int(meas[11:15], 16)
                 # Then, scale the raw output (an int between 0-32000) to the measurement signal (0-100%)
-                setpoint = np.interp(setpoint, [0,32000], [0,100.0])
                 measure = np.interp(measure, [0,41942], [0,131.07]) # This is basically the same as the setpoint, but can measure over 100%
 
-                # Parsing fmeasure and temperature is a little more complicated -
+                # Parsing fsetpoint, fmeasure and temperature is a little more complicated -
                 # grab their respective slices from the chained response, then convert from IEEE754 floating point notation to decimal
-                fmeasure = self.hex_to_ieee754_dec(fmeas_and_temp[11:19])
-                temp = self.hex_to_ieee754_dec(fmeas_and_temp[23:])
-
+                fsetpoint = ieee754_conversions.dec_from_hex(fsetpoint[11:19])
+                fmeasure = ieee754_conversions.dec_from_hex(fmeas_and_temp[11:19])
+                temp = ieee754_conversions.dec_from_hex(fmeas_and_temp[23:])
+                
                 self.big_data["Bronkhorst Pressure"]["Time (epoch)"] = timestamp
-                self.big_data["Bronkhorst Pressure"]["Data"]["Setpoint"] = setpoint
+                self.big_data["Bronkhorst Pressure"]["Data"]["Setpoint (mbar a)"] = fsetpoint
                 self.big_data["Bronkhorst Pressure"]["Data"]["Measurement (%)"] = measure
                 self.big_data["Bronkhorst Pressure"]["Data"]["Measurement (mbar a)"] = fmeasure
                 self.big_data["Bronkhorst Pressure"]["Data"]["Temperature (C)"] = temp
@@ -430,56 +452,6 @@ class Interpreter():
                 logger.warning(f"Error in saving bronkhorst data to big dictionary: No key {e}. Not updating measurement")
             except Exception as e:
                 logger.warning(f"Unexpected exception in Bronkhorst data: {e}. Not updating measurement")
-
-    def mantissa_to_int(self, mantissa_str):
-        """Method to convert the mantissa of the IEEE floating point to its decimal representation"""
-        # Variable to be our exponent as we loop through the mantissa
-        power = -1
-        # Variable to store the decimal value of mantissa
-        mantissa = 0
-        # Iterate through binary number and convert it from binary
-        for i in mantissa_str:
-            mantissa += (int(i)*pow(2, power))
-            power -= 1
-            
-        return (mantissa + 1)
-
-    def hex_to_ieee754_dec(self, hex_str:str) -> float:
-        """
-        Method to convert a hexadecimal string (e.g what is returned from the Bronkhorst) into an IEEE floating point. It's gnarly,
-        more details https://www.mimosa.org/ieee-floating-point-format/ and https://www.h-schmidt.net/FloatConverter/IEEE754.html
-        
-        In short, the IEEE 754 standard formats a floating point as N = 1.F x 2E-127, 
-        where N = floating point number, F = fractional part in binary notation, E = exponent in bias 127 representation.
-
-        The hex input corresponds to a 32 bit binary:
-                Sign | Exponent  |  Fractional parts of number
-                0    | 00000000  |  00000000000000000000000
-            Bit: 31   | [30 - 23] |  [22        -         0]
-
-        Args:
-            hex_str (str, hexadecimal representation of binary string)
-
-        Returns:
-            dec (float, number in decimal notation)
-        """
-
-        # Convert to integer, keeping its hex representation
-        ieee_32_hex = int(hex_str, 16)
-        # Convert to 32 bit binary
-        ieee_32 = f'{ieee_32_hex:0>32b}'
-        # The first bit is the sign bit
-        sign_bit = int(ieee_32[0])
-        # The next 8 bits are exponent bias in biased form - subtract 127 to get the unbiased form
-        exponent_bias = int(ieee_32[1:9], 2)
-        exponent_unbias = exponent_bias - 127
-        # Next 23 bits are the mantissa
-        mantissa_str = ieee_32[9:]
-        mantissa_int = self.mantissa_to_int(mantissa_str)
-        # Finally, convert to decimal
-        dec = pow(-1, sign_bit) * mantissa_int * pow(2, exponent_unbias)
-
-        return dec
 
 if __name__ == "__main__":
     interp = Interpreter()

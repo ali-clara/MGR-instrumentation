@@ -42,12 +42,15 @@ Flowmeter:
 Bronkhorst Pressure:
   Time (epoch): []
   Data:
-    Setpoint: []
+    Setpoint (mbar a): []
     Measurement (%): []
     Measurement (mbar a): []
     Temperature (C): []
-# Melthead:
-#   Time (epoch): []
-#   Data:
-#     Dummy key: []
-  
+  Control:
+    Pressure (mbar):
+Melthead:
+  Time (epoch):
+  Data:
+    Temperature (Not Yet Integrated):
+  Control:
+    Temperature (C):

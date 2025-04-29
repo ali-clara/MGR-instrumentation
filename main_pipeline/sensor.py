@@ -54,6 +54,17 @@ except SerialException:
 except KeyError as e:
     logger.warning(f"Key error in reading sensor_comms configuration file: {e}. Check that your dictionary keys match")
 
+# Picarro Water
+# try:
+#     serial.Serial(port=comms_config["Picarro Water"]["serial port"], baudrate=comms_config["Picarro Water"]["baud rate"])
+#     from sensor_interfaces.picarro_interface import Picarro
+#     logger.info(f"Successfully connected to port {comms_config['Picarro Water']['serial port']}, using real Picarro Water hardware")
+# except SerialException:
+#     from sensor_interfaces.sim_instruments import Picarro
+#     logger.info(f"Couldn't find Picarro at port {comms_config['Picarro Water']['serial port']}, shadowing sensor calls with substitute functions")
+# except KeyError as e:
+#     logger.warning(f"Key error in reading sensor_comms configuration file: {e}. Check that your dictionary keys match")
+
 # Abakus 
 try:
     serial.Serial(port=comms_config["Abakus Particle Counter"]["serial port"], baudrate=comms_config["Abakus Particle Counter"]["baud rate"])
@@ -101,6 +112,17 @@ except SerialException:
 except KeyError as e:
     logger.error(f"Key error in reading sensor_comms configuration file: {e}. Check that your dictionary keys match")
 
+# Melthead
+try:
+    serial.Serial(port=comms_config['Melthead']['serial port'], baudrate=comms_config['Melthead']['baud rate'])
+    from sensor_interfaces.melthead_interface import MeltHead
+    logger.info(f"Successfully connected to port {comms_config['Melthead']['serial port']}, using real Melthead hardware")
+except SerialException:
+    from sensor_interfaces.sim_instruments import MeltHead
+    logger.warning(f"Couldn't find Melthead at port {comms_config['Melthead']['serial port']}, shadowing sensor calls with substitute functions")
+except KeyError as e:
+    logger.error(f"Key error in reading sensor_comms configuration file: {e}. Check that your dictionary keys match")
+
 class Sensor():
     """Class that reads from the different sensors and publishes that data over busses"""
     @log_on_end(logging.INFO, "Sensor class initiated", logger=logger)
@@ -113,6 +135,7 @@ class Sensor():
         self.gas_picarro = Picarro(serial_port=comms_config["Picarro Gas"]["serial port"], baud_rate=comms_config["Picarro Gas"]["baud rate"])
         # self.water_picarro = Picarro(serial_port=comms_config["Picarro Water"]["serial port"], baud_rate=comms_config["Picarro Water"]["baud rate"])
         self.bronkhorst = Bronkhorst(serial_port=comms_config["Bronkhorst Pressure"]["serial port"], baud_rate=comms_config["Bronkhorst Pressure"]["baud rate"])
+        self.melthead = MeltHead(serial_port=comms_config["Melthead"]["serial port"], baud_rate=comms_config["Melthead"]["baud rate"])
 
         # Read in the sensor config file to grab a list of all the sensors we're working with
         try:
@@ -149,8 +172,10 @@ class Sensor():
         # Fill in the dictionary with the results of calling the sensor init functions
         self.sensor_status_dict["Abakus Particle Counter"] = self.abakus.initialize_abakus()
         self.sensor_status_dict["Picarro Gas"] = self.gas_picarro.initialize_picarro()
+        # self.sensor_status_dict["Picarro Water"] = self.water_picarro.initialize_picarro()
         self.sensor_status_dict["Laser Distance Sensor"] = self.laser.initialize_laser()
         self.sensor_status_dict["Bronkhorst Pressure"] = self.bronkhorst.initialize_bronkhorst()
+        self.sensor_status_dict["Melthead"] = self.melthead.initialize_pid()
 
         # The flowmeters are a little special, since it's two sensors in one - deal with that here
         # Initialize and grab the results of flowmeter initialization

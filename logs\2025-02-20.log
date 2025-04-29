@@ -1,0 +1,578 @@
+INFO: 19:54:44 - main_pipeline.sensor:  Couldn't find Picarro at port COM8, shadowing sensor calls with substitute functions
+WARNING: 19:54:44 - main_pipeline.sensor:  Couldn't find Abakus at port COM4, shadowing sensor calls with substitute functions
+WARNING: 19:54:44 - main_pipeline.sensor:  Couldn't find Flowmeter at port COM3 and COM5, shadowing sensor calls with substitute functions
+WARNING: 19:54:44 - main_pipeline.sensor:  Couldn't find Dimetix laser at port COM6, shadowing sensor calls with substitute functions
+WARNING: 19:54:44 - main_pipeline.sensor:  Couldn't find Bronkhorst at port COM7, shadowing sensor calls with substitute functions
+WARNING: 19:54:44 - main_pipeline.sensor:  Couldn't find Melthead at port COM9, shadowing sensor calls with substitute functions
+INFO: 19:54:44 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM4 with baud 38400
+INFO: 19:54:44 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM3 with baud 115200
+INFO: 19:54:44 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM5 with baud 115200
+INFO: 19:54:44 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM6 with baud 19200
+INFO: 19:54:44 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM8 with baud 19200
+INFO: 19:54:44 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM7 with baud 38400
+INFO: 19:54:44 - main_pipeline.sensor:  Sensor class initiated
+INFO: 19:54:44 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 19:54:44 - main_pipeline.writer:  Display class initiated
+INFO: 19:54:44 - __main__:  No control inputs for the Picarro Gas
+INFO: 19:54:44 - __main__:  No control inputs for the Laser Distance Sensor
+INFO: 19:54:44 - __main__:  No control inputs for the Abakus Particle Counter
+INFO: 19:54:44 - __main__:  No control inputs for the Flowmeter
+INFO: 19:54:49 - main_pipeline.sensor:  Initializing sensors
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Initializing Abakus
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Abakus initialized
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Initializing Picarro
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Initialized Picarro
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Initializing Dimetix laser
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Laser initialized
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Initializing Bronkhorst
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Bronkhorst initialized
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Initializing Melthead
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Melthead initialized
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Initializing Flowmeter
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Flowmeter sli2000 initialized
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Initializing Flowmeter
+INFO: 19:54:49 - sensor_interfaces.sim_instruments:  Flowmeter sls1500 initialized
+INFO: 19:54:49 - main_pipeline.sensor:  Finished initializing sensors
+INFO: 19:55:35 - main_pipeline.sensor:  Shutting down sensors
+INFO: 19:55:35 - sensor_interfaces.sim_instruments:  Abakus measurements stopped
+INFO: 19:55:35 - sensor_interfaces.sim_instruments:  Dimetix laser turned off
+INFO: 19:55:35 - main_pipeline.sensor:  Finished shutting down sensors
+INFO: 19:56:29 - main_pipeline.sensor:  Couldn't find Picarro at port COM8, shadowing sensor calls with substitute functions
+WARNING: 19:56:29 - main_pipeline.sensor:  Couldn't find Abakus at port COM4, shadowing sensor calls with substitute functions
+WARNING: 19:56:29 - main_pipeline.sensor:  Couldn't find Flowmeter at port COM3 and COM5, shadowing sensor calls with substitute functions
+WARNING: 19:56:29 - main_pipeline.sensor:  Couldn't find Dimetix laser at port COM6, shadowing sensor calls with substitute functions
+WARNING: 19:56:29 - main_pipeline.sensor:  Couldn't find Bronkhorst at port COM7, shadowing sensor calls with substitute functions
+WARNING: 19:56:29 - main_pipeline.sensor:  Couldn't find Melthead at port COM9, shadowing sensor calls with substitute functions
+INFO: 19:56:29 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM4 with baud 38400
+INFO: 19:56:29 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM3 with baud 115200
+INFO: 19:56:29 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM5 with baud 115200
+INFO: 19:56:29 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM6 with baud 19200
+INFO: 19:56:29 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM8 with baud 19200
+INFO: 19:56:29 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM7 with baud 38400
+INFO: 19:56:29 - main_pipeline.sensor:  Sensor class initiated
+INFO: 19:56:29 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 19:56:29 - main_pipeline.writer:  Display class initiated
+INFO: 19:56:29 - __main__:  No control inputs for the Picarro Gas
+INFO: 19:56:29 - __main__:  No control inputs for the Laser Distance Sensor
+INFO: 19:56:29 - __main__:  No control inputs for the Abakus Particle Counter
+INFO: 19:56:29 - __main__:  No control inputs for the Flowmeter
+INFO: 19:56:33 - main_pipeline.sensor:  Initializing sensors
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Initializing Abakus
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Abakus initialized
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Initializing Picarro
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Initialized Picarro
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Initializing Dimetix laser
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Laser initialized
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Initializing Bronkhorst
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Bronkhorst initialized
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Initializing Melthead
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Melthead initialized
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Initializing Flowmeter
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Flowmeter sli2000 initialized
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Initializing Flowmeter
+INFO: 19:56:33 - sensor_interfaces.sim_instruments:  Flowmeter sls1500 initialized
+INFO: 19:56:33 - main_pipeline.sensor:  Finished initializing sensors
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:34 - __main__:  Error updating the Picarro Gas buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Laser Distance Sensor buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Abakus Particle Counter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Abakus Particle Counter buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Flowmeter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Bronkhorst Pressure buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Melthead buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:56:34 - __main__:  Error updating the Melthead buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:35 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:36 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:56:37 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+INFO: 19:56:45 - main_pipeline.sensor:  Shutting down sensors
+INFO: 19:56:45 - sensor_interfaces.sim_instruments:  Abakus measurements stopped
+INFO: 19:56:45 - sensor_interfaces.sim_instruments:  Dimetix laser turned off
+INFO: 19:56:45 - main_pipeline.sensor:  Finished shutting down sensors
+INFO: 19:57:34 - __main__:  Interpreter class initiated
+INFO: 19:57:40 - main_pipeline.sensor:  Couldn't find Picarro at port COM8, shadowing sensor calls with substitute functions
+WARNING: 19:57:40 - main_pipeline.sensor:  Couldn't find Abakus at port COM4, shadowing sensor calls with substitute functions
+WARNING: 19:57:40 - main_pipeline.sensor:  Couldn't find Flowmeter at port COM3 and COM5, shadowing sensor calls with substitute functions
+WARNING: 19:57:40 - main_pipeline.sensor:  Couldn't find Dimetix laser at port COM6, shadowing sensor calls with substitute functions
+WARNING: 19:57:40 - main_pipeline.sensor:  Couldn't find Bronkhorst at port COM7, shadowing sensor calls with substitute functions
+WARNING: 19:57:40 - main_pipeline.sensor:  Couldn't find Melthead at port COM9, shadowing sensor calls with substitute functions
+INFO: 19:57:40 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM4 with baud 38400
+INFO: 19:57:40 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM3 with baud 115200
+INFO: 19:57:40 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM5 with baud 115200
+INFO: 19:57:40 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM6 with baud 19200
+INFO: 19:57:40 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM8 with baud 19200
+INFO: 19:57:40 - sensor_interfaces.sim_instruments:  Fake hardware, pretending to use serial port COM7 with baud 38400
+INFO: 19:57:40 - main_pipeline.sensor:  Sensor class initiated
+INFO: 19:57:40 - main_pipeline.interpreter:  Interpreter class initiated
+INFO: 19:57:40 - main_pipeline.writer:  Display class initiated
+INFO: 19:57:40 - __main__:  No control inputs for the Picarro Gas
+INFO: 19:57:40 - __main__:  No control inputs for the Laser Distance Sensor
+INFO: 19:57:40 - __main__:  No control inputs for the Abakus Particle Counter
+INFO: 19:57:40 - __main__:  No control inputs for the Flowmeter
+INFO: 19:57:43 - main_pipeline.sensor:  Initializing sensors
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Initializing Abakus
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Abakus initialized
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Initializing Picarro
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Initialized Picarro
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Initializing Dimetix laser
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Laser initialized
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Initializing Bronkhorst
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Bronkhorst initialized
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Initializing Melthead
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Melthead initialized
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Initializing Flowmeter
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Flowmeter sli2000 initialized
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Initializing Flowmeter
+INFO: 19:57:43 - sensor_interfaces.sim_instruments:  Flowmeter sls1500 initialized
+INFO: 19:57:43 - main_pipeline.sensor:  Finished initializing sensors
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:44 - __main__:  Error updating the Picarro Gas buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Picarro Gas buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Laser Distance Sensor buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Laser Distance Sensor buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Abakus Particle Counter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Abakus Particle Counter buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Flowmeter buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Flowmeter buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Bronkhorst Pressure buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Bronkhorst Pressure buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Melthead buffer timestamp: 'NoneType' object is not subscriptable
+WARNING: 19:57:44 - __main__:  Error updating the Melthead buffer data: 'NoneType' object is not subscriptable
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:45 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:46 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:47 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:48 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:49 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:50 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:51 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:52 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLI2000: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+WARNING: 19:57:53 - main_pipeline.interpreter:  Encountered exception in validating flowmeter SLS1500: string index out of range. Raw output nan
+INFO: 19:57:57 - main_pipeline.sensor:  Shutting down sensors
+INFO: 19:57:57 - sensor_interfaces.sim_instruments:  Abakus measurements stopped
+INFO: 19:57:57 - sensor_interfaces.sim_instruments:  Dimetix laser turned off
+INFO: 19:57:57 - main_pipeline.sensor:  Finished shutting down sensors

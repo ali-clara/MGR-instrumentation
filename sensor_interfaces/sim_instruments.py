@@ -3,7 +3,7 @@
 # with simulated values that have the same representation and type as real data 
 # 
 # Ali Jones
-# Last updated 9/20/24
+# Last updated 9/28/24
 # -------------
 
 import time
@@ -230,7 +230,7 @@ class Dimetix():
 
 class Bronkhorst():
     def __init__(self, serial_port, baud_rate=38400) -> None:
-        """Not yet done. Fake hardware, pretends to do everything the real Dimetix laser class does"""
+        """Not yet done. Fake hardware, pretends to do everything the real melthead class does"""
         self.initialize_pyserial(serial_port, baud_rate)
 
     def initialize_pyserial(self, port, baud):
@@ -247,19 +247,95 @@ class Bronkhorst():
         logger.info("Bronkhorst initialized")
         return 2
     
+    def validate_setpoint(self, setpoint):
+        """Method to make sure we're giving the controller a valid reading and that it's within acceptable pressure bounds"""
+        valid_setpoint = False
+        try:
+            setpoint = float(setpoint)
+        # If we're passed a string that we can't parse, we'll get a ValueError. If we're passed a Nonetype or other input 
+        # we can't convert to a float, we'll get a TypeError. Catch both.
+        except (ValueError, TypeError) as e:
+            logger.info(f"Invalid bronkhorst setpoint: {setpoint}. {e}")
+        except Exception as e:
+            logger.info(f"Not sure how you managed to trigger this error, nicely done! Invalid bronkhorst setpoint: {setpoint}. {e}")
+        else:
+            # if within some pressure bound:
+                # do a thing
+            valid_setpoint = True
+
+        return valid_setpoint
+    
+    def send_setpoint(self, setpoint):
+        setpoint_valid = self.validate_setpoint(setpoint)
+        if setpoint_valid:
+            logger.info(f"Set Bronkhorst setpoint to {setpoint} mbar")
+
     # @log_on_end(logging.INFO, "Bronkhorst queried", logger=logger)
     def query(self):
-        """Returns - timestamp (float, epoch time), output ((bytestr, bytestr), chained responses for setpoint & measure and 
-            fmeasure  & temperature)"""
-        setpoint_and_meas = ':0A800281215DC001217CE0'
+        """Returns - timestamp (float, epoch time), output ((bytestr, bytestr, bytestr), responses for fsetpoint, measure, and a
+            chained response for fmeasure  & temperature)"""
+        
+        fsetpoint = ':0880022141453B8000\r\n'
+        meas = ':06800201217D00\r\n'
         fmeas_and_temp = ':0E8002A1404479C0E0214741C80000'
         timestamp = time.time()
 
         # If we're in debug mode, return this fake reading
         if debug:
-            output = (setpoint_and_meas, fmeas_and_temp)
+            output = (fsetpoint, meas, fmeas_and_temp)
         # Otherwise, return NAN
         else:
-            output = ("nan", "nan")
+            output = "nan"
         
         return timestamp, output
+    
+class MeltHead:
+    def __init__(self, serial_port, baud_rate=38400) -> None:
+        """Fake hardware, pretends to do everything the real melthead does"""
+        self.initialize_pyserial(serial_port, baud_rate)
+
+    def initialize_pyserial(self, port, baud):
+        pass
+
+    @log_on_start(logging.INFO, "Initializing Melthead", logger=logger)
+    def initialize_pid(self, timeout=10):
+        """
+        The initialization methods return one of three values: 
+        1 (real hardware, initialization succeeded), 2 (simulated hardware), 3 (initialization failed / error)
+            
+            Returns - 2
+        """
+        logger.info("Melthead initialized")
+        return 2
+    
+    def validate_setpoint(self, setpoint):
+        """Method to make sure we're giving the controller a valid reading and that it's within acceptable temperature bounds"""
+        valid_setpoint = False
+        try:
+            setpoint = float(setpoint)
+        # If we're passed a string that we can't parse, we'll get a ValueError. If we're passed a Nonetype or other input 
+        # we can't convert to a float, we'll get a TypeError. Catch both.
+        except (ValueError, TypeError) as e:
+            logger.info(f"Invalid melthead setpoint: {setpoint}. {e}")
+        except Exception as e:
+            logger.info(f"Not sure how you managed to trigger this error, nicely done! Invalid melthead setpoint: {setpoint}. {e}")
+        else:
+            if setpoint < 25:
+                valid_setpoint = True
+
+        return valid_setpoint
+
+    @log_on_end(logging.INFO, "Started PID control loop", logger=logger)
+    def start_control_loop(self):
+        pass
+
+    @log_on_end(logging.INFO, "Stopped PID control loop", logger=logger)
+    def stop_control_loop(self):
+        pass
+
+    def send_setpoint(self, setpoint):
+        setpoint_valid = self.validate_setpoint(setpoint)
+        if setpoint_valid:
+            logger.info(f"Set melthead setpoint to {setpoint} degC")
+
+
